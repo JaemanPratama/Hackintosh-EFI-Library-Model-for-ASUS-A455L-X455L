@@ -1,1 +1,198 @@
-Please Fix this repo
+<img align="left" width="80" height="90" src="https://user-images.githubusercontent.com/89202419/166133932-f82c08c0-5470-4135-afee-6e23591a8344.png#gh-light-mode-only">
+
+<img align="left" width="80" height="90" src="https://user-images.githubusercontent.com/89202419/166133471-6976f2b1-1b2c-4263-924d-e10991507e30.png#gh-dark-mode-only">
+
+## ASUS A455LA / X455LA Series Opencore Hackintosh
+
+***OpenCore EFI untuk Asus Seri A455L / X455L*** 
+
+
+
+[![](https://img.shields.io/badge/Reposity-JaemanPratama-informational?style=flat&logo=apple&logoColor=white&color=9debeb)](https://github.com/JaemanPratama)
+[![](https://img.shields.io/badge/Telegram-HackintoshLover-informational?style=flat&logo=telegram&logoColor=white&color=5fb659)](https://t.me/HackintoshLover)
+[![](https://img.shields.io/badge/Facebook-HackintoshIndonesia-informational?style=flat&logo=facebook&logoColor=white&color=3a4dc9)](https://www.facebook.com/groups/hackintosh.indonesia)
+[![](https://img.shields.io/badge/Github-Issues-informational?style=flat&logo=Github&logoColor=white&color=8a178a)](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/issues)
+
+
+> :warning: **PERINGATAN:**
+Ini bukan panduan atau folder EFI plug-and-play, lihat [Dortania](https://dortania.github.io/getting-started/) sebelum melakukan apa pun. Saya tidak bertanggung jawab atas kerusakan apa pun. Konfigurasi OpenCore ini dioptimalkan untuk perangkat keras khusus saya, jadi harap gunakan hanya sebagai referensi atau jika Anda memiliki perangkat keras yang sama/serupa.!
+
+<img src="https://user-images.githubusercontent.com/89202419/166002855-8d96a3a2-bc06-4173-80f5-3c17eadb5c23.png#gh-light-mode-only" width="50%" height="50%">
+
+<img src="https://user-images.githubusercontent.com/89202419/166133645-eeff932b-2be4-4542-a322-989122b623b4.png#gh-dark-mode-only" width="50%" height="50%">
+
+
+```
+Jika Anda memilih untuk menggunakan EFI ini, berarti Anda setuju untuk mengambil risiko menggunakan EFI ini
+EFI ini bisa saja tidak stabil di laptop anda
+Saya tidak bertanggung jawab atas kerugian yang disebabkan oleh penggunaan EFI ini
+GUNAKAN DENGAN RISIKO ANDA SENDIRI !
+```
+
+
+
+## Model Hardware Yang Didukung EFI Ini:
+
+### Asus X455LA
+
+| **Category**   | **Component**                 		
+|----------------|--------------------------------------|
+|**CPU**		       |2.0GHz Intel Core i3-5005U	 		            |										      
+|**GPU**		       |Intel HD 5500				     		 										       |
+|**RAM**         |4 + 2 GB 1600 MHz DDR3               		   |
+|**SDD**         |MidasForce 256 GB SATA	 		                |
+|**Layar**       |14 Inch HD LED	1366x768	 		               |										      
+|**Wi-Fi/BT**    |AR9565/AR956X	  			     		                |	     
+|**Bluetooth**   |3012	  			     		                         | 	  
+|**Ethernet**    |Realtek RTL8111				 		                    |										      
+|**Audio** 		    |Conexant CX20751/2				 		                 |
+|**Input**       |PS2 Keyboard & ETD0108 ELAN Interface Touchpad |										      
+
+
+### Asus X455LJ
+
+| **Category**   | **Component**                 		
+|----------------|--------------------------------------|
+|**CPU**		       |2.20GHz Intel Core i5-5200U		            |										      
+|**GPU**		       |Intel HD 5500				     		 										       |
+|**DGPU**		       |Nvidia 920M			     		 										       |
+|**RAM**         |4 + 4 GB DDR3L               		   |
+|**SDD**         |Sandisk SSD Plus 120GB & HDD Hitachi 5400RPM SATA2 500GB 		                |
+|**Layar**       |14 Inch HD LED	1366x768	 		               |										      
+|**Wi-Fi/BT**    |Atheros AR9565  			     		                |	     
+|**Bluetooth**   |Built In 			     		                         | 	  
+|**Ethernet**    |Realtek RTL8111				 		                    |										      
+|**Audio** 		    |Built In 						 		                 |
+|**Input**       |PS2 Keyboard & PS2 Touchpad |		
+
+### Asus A455LB 
+
+| **Category**   | **Component**                 		
+|----------------|--------------------------------------|
+|**CPU**		       |2.20GHz Intel Core i5-5200U  |										      
+|**GPU**		       |Intel HD 5500				     		 										       |
+|**DGPU**		       |Nvidia 940M			     		 										       |
+|**RAM**         |4 + 4 1600MHz GB DDR3L               		   |
+|**SDD**         |Apacer AS340 PANTHER 240GB SATA III SSD + HDD 1TB 		                |
+|**Layar**       |14 Inch HD LED	1366x768	 		               |										      
+|**Wi-Fi/BT**    |Atheros AR9565  			     		                |	     
+|**Bluetooth**   |Built In 			     		                         | 	  
+|**Ethernet**    |Realtek RTL8111				 		                    |										      
+|**Audio** 		   |Conexant CX20751/2					 		                 |
+|**Input**       |PS2 Keyboard & Focaltech PS2 Touchpad |
+
+### Asus A455LF 
+
+| **Category**   | **Component**                 		
+|----------------|--------------------------------------|
+|**CPU**		       |1,7GHz Intel Core i3-4005U  |										      
+|**GPU**		       |Intel HD 4400				     		 										       |
+|**DGPU**		       |Nvidia 930M			     		 										       |
+|**RAM**         |4 + 4 1600MHz GB DDR3L               		   |
+|**SDD**         |SSD SATA III  		                |
+|**Layar**       |14 Inch HD LED	1366x768	 		               |										      
+|**Wi-Fi/BT**    |Built In 	  			     		                |	     
+|**Bluetooth**   |Built In 			     		                         | 	  
+|**Ethernet**    |Realtek RTL8111				 		                    |										      
+|**Audio** 		   |Sonic Master Audio					 		                 |
+|**Input**       |PS2 Keyboard & Asus PS2 Touchpad |
+
+### Asus A455LD 
+
+| **Category**   | **Component**                 		
+|----------------|--------------------------------------|
+|**CPU**		       |2.70 GHz Intel Core i5-4210U  |										      
+|**GPU**		       |Intel HD 4400				     		 										       |
+|**DGPU**		       |Nvidia GT 820M			     		 										       |
+|**RAM**         |4 GB DDR3               		   |
+|**SDD**         |SSD SATA III  		                |
+|**Layar**       |14 Inch HD LED	1366x768	 		               |										      
+|**Wi-Fi/BT**    |Built In 	  			     		                |	     
+|**Bluetooth**   |Built In 			     		                         | 	  
+|**Ethernet**    |Realtek RTL8111				 		                    |										      
+|**Audio** 		   |Sonic Master Audio					 		                 |
+|**Input**       |PS2 Keyboard & Asus PS2 Touchpad |
+
+
+
+## :white_check_mark: Versi MacOS yang telah berhasil dijalankan:
+
+- [x] Sierra (Tested, Opencore, Olarila, Installer) 
+- `Tidak Direkomendasikan`
+  - Wifi harus dipasang di S/L/E (system/library/extension), sleep terkadang gagal
+- [x] High Sierra (Tested, Opencore, Olarila Installer) 
+- `Tidak Direkomendasikan`
+  - Wifi harus dipasang di S/L/E (system/library/extension), sleep terkadang gagal
+- [x] Mojave (Tested, Opencore, Online Installer)
+- `Direkomendasikan`
+- [x] Catalina (Tested, Opencore, Online Installer)
+- `Direkomendasikan`
+- [x] Bigsur (Tested, Opencore, Online Installer)
+- `Direkomendasikan`
+  - Bagi Pengguna wifi atheros bar menu wifi hanya menunjukkan  sinyal wifi lemah
+- [x] Monterey (Tested, Opencore, Olarila Installer) 
+- `Tidak Direkomendasikan`
+  - Bagi Pengguna wifi atheros, wifi/bluetooth tidak berjalan ( EOL )
+
+
+
+## 🔍 Konfigurasi Bios :
+
+Bagian di bawah ini diadaptasi dari @asepms92 [Hackintosh-ASUS-A455LF-Notebook](https://github.com/asepms92/Hackintosh-ASUS-A455LF-Notebook/blob/master/README.md)
+
+**Cara Memasuki Bios:**\
+Tekan **F2** 
+
+Bios Config | Setting 
+:---:| :---:
+Security -> Secure Boot | Disabled
+Intel Virtualization    | Enabled OK / Disabled if you have issues
+VT-d | Disabled / Enabled with boot-args "dart=0"
+Graphics Configuration -> DVMT Pre-Allocation | 64M / default 32M but need pre-alloc patches
+USB Configuration -> XHCI Pre-Boot Mode | Enabled / Smart Auto if using EHCI device
+SATA Mode | AHCI
+Boot -> Launch CSM | Enabled or Disabled for Resolution Boot OC
+
+
+## :man_facepalming: **Masalah Yang Didapat**
+
+### Membuat touchpad dan keyboard benar benar berfungsi :
+
+Saya telah memperhatikan masalah ini akhir-akhir ini di mana touchpad dan keyboard berhenti bekerja (not respond), Lalu saat layar laptop tidur akan kembali touchpad tombol akan bekerja kembali. Masih mencoba mencari solusi di luar sana.
+ 
+### Membuat kecepatan wifi benar benar berfungsi seperti aslinya :
+
+Setelah Wifi bekerja di mesin saya, masalah terbesar bagi saya adalah membuat kecepatan wifi benar-benar berfungsi seperti aslinya.</summary>
+
+<details>
+<summary>Contoh</summary>
+<img src="https://user-images.githubusercontent.com/89202419/169350954-1e9dd13f-6408-4b7a-88e7-631ad1cce277.png">
+
+Solusi Terbaik adalah dengan membeli dongle Wi-Fi USB atau kartu nirkabel yang didukung
+</details>
+ 
+### Memaksakan mematikan bluetooth :
+Saya telah berjuang untuk waktu yang lama agar Bluetooth berfungsi di laptop ini. Hal yang akhirnya berhasil bagi saya adalah menambahkan Kext Ath3BT.kext dan IOath3kfrmwr.kext Tetapi jika terlalu memaksakan Mematikan Bluetooth di Prefensi System itu akan membuat bluetooth tidak terdeteksi solusinya adalah membuat laptop tidur dan itu akan membuat bluetooth bekerja kembali
+
+
+<details>
+<summary>Contoh </summary>
+<img src="https://user-images.githubusercontent.com/89202419/169351491-c236bd1b-2c77-4249-8897-bc018b2351ec.png">
+
+Peringatan: Ath3kBTInjector :
+
+
+:warning: kext memiliki cacat kecil: jika Anda ingin mengaktifkan / menonaktifkan Bluetooth , Anda harus mematikan Wi-Fi terlebih dahulu.  
+Ath3kBTInjector dapat dihindari bagi mereka yang tidak keberatan tombol On/off bluetooth berwarna abu - abu di Bluetooth PrefPane.
+ 
+</details>
+
+### HDMI mungkin tidak berfungsi saat pertama kali Anda mencolokkannya
+
+Anda harus memasangnya kembali, atau menutup tutupnya selama sekitar lima detik dan membuka kembali tutupnya
+
+### Kartu grafis diskrit tidak berfungsi, karena macOS tidak mendukung teknologi nvidia
+
+Telah digunakan `SSDT-DDGPU` untuk menonaktifkannya untuk menghemat daya
+ 
+
