@@ -33,7 +33,9 @@ GUNAKAN DENGAN RISIKO ANDA SENDIRI !
 
 ## Model Hardware Yang Didukung EFI Ini:
 
-### Asus X455LA
+### [Asus X455LA](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/X455LA)
+
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.1-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
 | **Category**   | **Component**                 		
 |----------------|--------------------------------------|
@@ -49,7 +51,9 @@ GUNAKAN DENGAN RISIKO ANDA SENDIRI !
 |**Input**       |PS2 Keyboard & ETD0108 ELAN Interface Touchpad |										      
 
 
-### Asus X455LJ
+### [Asus X455LJ](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/X455LJ)
+
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.2-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
 | **Category**   | **Component**                 		
 |----------------|--------------------------------------|
@@ -65,7 +69,10 @@ GUNAKAN DENGAN RISIKO ANDA SENDIRI !
 |**Audio** 		    |Built In 						 		                 |
 |**Input**       |PS2 Keyboard & PS2 Touchpad |		
 
-### Asus A455LB 
+### [Asus A455LB](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/A455LB) 
+
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.2-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+
 
 | **Category**   | **Component**                 		
 |----------------|--------------------------------------|
@@ -81,7 +88,10 @@ GUNAKAN DENGAN RISIKO ANDA SENDIRI !
 |**Audio** 		   |Conexant CX20751/2					 		                 |
 |**Input**       |PS2 Keyboard & Focaltech PS2 Touchpad |
 
-### Asus A455LF 
+### [Asus A455LF](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/A455LF) 
+
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.2-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+
 
 | **Category**   | **Component**                 		
 |----------------|--------------------------------------|
@@ -97,7 +107,10 @@ GUNAKAN DENGAN RISIKO ANDA SENDIRI !
 |**Audio** 		   |Sonic Master Audio					 		                 |
 |**Input**       |PS2 Keyboard & Asus PS2 Touchpad |
 
-### Asus A455LD 
+### [Asus A455LD](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/A455LD)
+
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.2-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+
 
 | **Category**   | **Component**                 		
 |----------------|--------------------------------------|
