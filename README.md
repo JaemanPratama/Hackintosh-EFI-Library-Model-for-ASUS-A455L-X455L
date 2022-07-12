@@ -159,12 +159,12 @@ Tekan **F2**
 Bios Config | Setting 
 :---:| :---:
 Security -> Secure Boot | Disabled
-Intel Virtualization    | Enabled OK / Disabled if you have issues
-VT-d | Disabled / Enabled with boot-args "dart=0"
-Graphics Configuration -> DVMT Pre-Allocation | 64M / default 32M but need pre-alloc patches
-USB Configuration -> XHCI Pre-Boot Mode | Enabled / Smart Auto if using EHCI device
+Intel Virtualization    | Enabled OK / Disabled jika Anda memiliki masalah
+VT-d | Disabled / Enabled ~~dengan boot-args "dart=0"~~
+Graphics Configuration -> DVMT Pre-Allocation | 64M / default 32M tetapi perlu tambalan 
+USB Configuration -> XHCI Pre-Boot Mode | Enabled / Smart Auto jika menggunakan perangkat EHCI
 SATA Mode | AHCI
-Boot -> Launch CSM | Enabled or Disabled for Resolution Boot OC
+Boot -> Launch CSM | Enabled or Disabled untuk Resolusi Boot OC
 
 
 ## :man_facepalming: **Masalah Yang Didapat**
