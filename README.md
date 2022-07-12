@@ -1,37 +1,45 @@
-<img align="left" width="80" height="90" src="https://user-images.githubusercontent.com/89202419/166133932-f82c08c0-5470-4135-afee-6e23591a8344.png#gh-light-mode-only">
+<img align="right" src="https://raw.githubusercontent.com/acidanthera/OpenCorePkg/master/Docs/Logos/OpenCore_with_text_Small.png" alt="OpenCore 0.8.2" width="225">
 
-<img align="left" width="80" height="90" src="https://user-images.githubusercontent.com/89202419/166133471-6976f2b1-1b2c-4263-924d-e10991507e30.png#gh-dark-mode-only">
-
-## ASUS A455LA / X455LA Series Opencore Hackintosh
-
-***OpenCore EFI untuk Asus Seri A455L / X455L*** 
-
-
-
+# Asus A455L Series Opencore Hackintosh
 [![](https://img.shields.io/badge/Reposity-JaemanPratama-informational?style=flat&logo=apple&logoColor=white&color=9debeb)](https://github.com/JaemanPratama)
 [![](https://img.shields.io/badge/Telegram-HackintoshLover-informational?style=flat&logo=telegram&logoColor=white&color=5fb659)](https://t.me/HackintoshLover)
 [![](https://img.shields.io/badge/Facebook-HackintoshIndonesia-informational?style=flat&logo=facebook&logoColor=white&color=3a4dc9)](https://www.facebook.com/groups/hackintosh.indonesia)
 [![](https://img.shields.io/badge/Github-Issues-informational?style=flat&logo=Github&logoColor=white&color=8a178a)](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/issues)
 
+<img align="right" src="https://user-images.githubusercontent.com/89202419/166133932-f82c08c0-5470-4135-afee-6e23591a8344.png#gh-light-mode-only" alt="Critter" height="190" width="175"></a>
 
-> :warning: **PERINGATAN:**
-Ini bukan panduan atau folder EFI plug-and-play, lihat [Dortania](https://dortania.github.io/getting-started/) sebelum melakukan apa pun. Saya tidak bertanggung jawab atas kerusakan apa pun. Konfigurasi OpenCore ini dioptimalkan untuk perangkat keras khusus saya, jadi harap gunakan hanya sebagai referensi atau jika Anda memiliki perangkat keras yang sama/serupa.!
-
-<img src="https://user-images.githubusercontent.com/89202419/166002855-8d96a3a2-bc06-4173-80f5-3c17eadb5c23.png#gh-light-mode-only" width="50%" height="50%">
-
-<img src="https://user-images.githubusercontent.com/89202419/166133645-eeff932b-2be4-4542-a322-989122b623b4.png#gh-dark-mode-only" width="50%" height="50%">
-
-
-```
-Jika Anda memilih untuk menggunakan EFI ini, berarti Anda setuju untuk mengambil risiko menggunakan EFI ini
-EFI ini bisa saja tidak stabil di laptop anda
-Saya tidak bertanggung jawab atas kerugian yang disebabkan oleh penggunaan EFI ini
-GUNAKAN DENGAN RISIKO ANDA SENDIRI !
-```
+<img align="right" src="https://user-images.githubusercontent.com/89202419/166133471-6976f2b1-1b2c-4263-924d-e10991507e30.png#gh-dark-mode-only" alt="Critter" height="180" width="165"></a>
 
 
 
-## Model Hardware Yang Didukung EFI Ini:
+Terimakasih Kepada :
+- [Acidanthera](https://github.com/acidanthera)
+- [Hackintosh Lover](https://t.me/HackintoshLover)
+- [RehabMan](https://github.com/RehabMan)
+- [Hackintosh Indonesia](https://id-id.facebook.com/groups/hackintosh.indonesia/)
+- [EmlyDinesh](https://github.com/EMlyDinEsHMG)
+- [OSXLatitude](https://osxlatitude.com)
+
+**Mendukung macOS : 10.14 - 12.3**
+
+<img align="left" src="https://user-images.githubusercontent.com/89202419/166133645-eeff932b-2be4-4542-a322-989122b623b4.png#gh-dark-mode-only" width="23%">
+
+<img align="left" src="https://user-images.githubusercontent.com/89202419/166002855-8d96a3a2-bc06-4173-80f5-3c17eadb5c23.png#gh-light-mode-only" width="23%">
+
+**:warning: Saya tidak akan bertanggung jawab atas kesalahan dalam operasi Anda!**
+
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.2-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+
+**Silakan lakukan riset jika Anda memiliki masalah sebelum mengganti EFI Anda dengan milik saya. Lihat [Dortania](https://dortania.github.io/getting-started/) sebelum melakukan apa pun. Saya tidak bertanggung jawab atas kehilangan apapun, termasuk namun tidak terbatas pada Kernel Panic, perangkat gagal untuk boot atau tidak dapat berfungsi secara normal, kerusakan penyimpanan atau kehilangan data**
+
+Versi stabil menggunakan `OpenCore 0.8.1`, dan versi beta EFI menggunakan `OpenCore 0.8.2`.
+
+
+<p align="center">
+   <img src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png">
+</p>
+
+## Model Perangkat Yang Didukung EFI Ini:
 
 ### [Asus X455LA](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/X455LA)
 
@@ -126,8 +134,6 @@ GUNAKAN DENGAN RISIKO ANDA SENDIRI !
 |**Audio** 		   |Sonic Master Audio					 		                 |
 |**Input**       |PS2 Keyboard & Asus PS2 Touchpad |
 
-
-
 ## :white_check_mark: Versi MacOS yang telah berhasil dijalankan:
 
 - [x] Sierra (Tested, Opencore, Olarila, Installer) 
@@ -207,5 +213,3 @@ Anda harus memasangnya kembali, atau menutup tutupnya selama sekitar lima detik 
 ### Kartu grafis diskrit tidak berfungsi, karena macOS tidak mendukung teknologi nvidia
 
 Telah digunakan `SSDT-DDGPU` untuk menonaktifkannya untuk menghemat daya
- 
-
