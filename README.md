@@ -22,9 +22,9 @@ Terimakasih Kepada :
 
 **Mendukung macOS : 10.14 - 12.3**
 
-<img align="left" src="https://user-images.githubusercontent.com/89202419/166133645-eeff932b-2be4-4542-a322-989122b623b4.png#gh-dark-mode-only" width="24%">
+<img align="left" src="https://user-images.githubusercontent.com/89202419/166133645-eeff932b-2be4-4542-a322-989122b623b4.png#gh-dark-mode-only" width="23%">
 
-<img align="left" src="https://user-images.githubusercontent.com/89202419/166002855-8d96a3a2-bc06-4173-80f5-3c17eadb5c23.png#gh-light-mode-only" width="24%">
+<img align="left" src="https://user-images.githubusercontent.com/89202419/166002855-8d96a3a2-bc06-4173-80f5-3c17eadb5c23.png#gh-light-mode-only" width="23%">
 
 **:warning: Saya tidak akan bertanggung jawab atas kesalahan dalam operasi Anda!**
 
