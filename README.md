@@ -29,11 +29,20 @@ Terimakasih Kepada :
 **:warning: Saya tidak akan bertanggung jawab atas kesalahan dalam operasi Anda!**
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.2-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+[![Chat](https://img.shields.io/badge/chat-github-red.svg)](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/issues)
+[![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.7-green.svg)](https://www.apple.com/li/macos/catalina/) [![MacOS Big Sur](https://img.shields.io/badge/macOS-11.6.7-red.svg)](https://www.apple.com/macos/big-sur/) [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
 
 **Silakan lakukan riset jika Anda memiliki masalah sebelum mengganti EFI Anda dengan milik saya. Lihat [Dortania](https://dortania.github.io/getting-started/) sebelum melakukan apa pun. Saya tidak bertanggung jawab atas kehilangan apapun, termasuk namun tidak terbatas pada Kernel Panic, perangkat gagal untuk boot atau tidak dapat berfungsi secara normal, kerusakan penyimpanan atau kehilangan data**
 
 Versi stabil menggunakan `OpenCore 0.8.1`, dan versi beta EFI menggunakan `OpenCore 0.8.2`.
 
+```
+Laptop ini adalah laptop anggaran, dengan spesifikasi ini,
+Anda tidak dapat melakukan pekerjaan berat, daya tahan baterai sekitar 2-3 jam, 
+Ini bagus tapi bukan yang terbaik, jika Anda ingin lebih,
+Anda dapat memilih spesifikasi yang lebih tinggi,
+tetapi pertimbangkan ini panduan mungkin berbeda untuk perangkat keras Anda.
+```
 
 <p align="center">
    <img src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png">
@@ -213,3 +222,8 @@ Anda harus memasangnya kembali, atau menutup tutupnya selama sekitar lima detik 
 ### Kartu grafis diskrit tidak berfungsi, karena macOS tidak mendukung teknologi nvidia
 
 Telah digunakan `SSDT-DDGPU` untuk menonaktifkannya untuk menghemat daya
+
+### Dual screen
+
+boot langsung colok HDMI, layar laptop mati, monitor nyala.
+tapi kalo boot tanpa HDMI, terus pas udah masuk desktop baru colok HDMI aman jadi dual screen
