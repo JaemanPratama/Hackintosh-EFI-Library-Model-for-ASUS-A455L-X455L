@@ -4,7 +4,8 @@
 2. Unduh file [ISO Windows 10](https://www.microsoft.com/en-us/software-download/windows10ISO)
 3. Pastikan Penyimpanan anda Cukup !!
 
-#### Catatan penting: Ini HANYA akan berfungsi jika sistem Anda dalam mode GPT (GUID) -UEFI (bukan MBR-Legacy)
+#### Catatan penting: Ini HANYA akan berfungsi jika sistem Anda dalam mode GPT (GUID) UEFI (bukan MBR-Legacy)
+
 
 ## Yang Anda perlukan:
 
@@ -23,11 +24,20 @@ Klik tombol + dan buat partisi baru dengan ukuran yang Anda inginkan untuk insta
 
 ## Booting Dari USB 
 
-Pastikan USB yang berisi penginstal Windows telah dimasukkan, lalu mulai ulang
-
-
+**Pastikan USB yang berisi penginstal Windows telah dimasukkan**, lalu mulai ulang
 
 Anda sekarang akan disajikan dengan daftar drive yang dapat di-boot. Pilih drive USB (biasanya berjudul “Windows”) untuk mulai menginstal Windows.
+
+- Pastikan Scan ScanPolicy telah diatur ke 0
+
+<details>
+<summary>Contoh Gambar</summary>
+
+<img src="https://user-images.githubusercontent.com/89202419/178944954-1992e9c1-c882-4a88-bc05-20dd055f5ac3.png">
+
+Terletak Dibagian `Config.plist -> Misc -> Security`
+</details>
+
 
 <img src="https://dortania.github.io/OpenCore-Legacy-Patcher/assets/img/oc-windows.eae5bcb0.png" width="50%" height="50%">
 
@@ -46,25 +56,31 @@ Selanjutnya, pilih Unallocated Space dan klik New untuk membuat partisi Windows 
 Biarkan penginstal selesai dan boot ke Windows.
 
 
-
-
 ### Menginstal Perangkat Lunak Dukungan Boot Camp
+```
+Peringatan Penting
+Ini hanya termasuk bagian dari kosmetik
+```
+
 
 - Pastikan Anda Telah Menginstall [7zip](https://www.7-zip.org)
+  * Wajib di install sebelum menjalankan brigadier.exe :warning:
 - Download [Alat ini](https://github.com/timsutton/brigadier/releases)
   * pastikan anda memilih brigadier.exe
 - Setelah Itu, jalankan brigadier.exe
   * Catatan : brigadier membutuhkan sedikit waktu untuk Mendownload Beberapa File, jadi harap bersabar.
-- Setelah brigadier Mendownload Beberapa File , Arahkan ke bootcamp-{filename}\BootCampfolder dan jalankan Setup.exe
+- Setelah brigadier Mendownload Beberapa File , Arahkan ke ``bootcamp-{filename}\BootCampfolder`` dan jalankan Setup.exe
   * Ini Memerlukan Waktu, Jadi harap bersabar
 - Catatan: Bagi mereka yang tidak memerlukan driver tambahan yang disediakan BootCamp, Anda dapat menghapus yang berikut ini:
   * $WinPEDriver$ 
-  * BootCamp/Drivers/...
+  * ``BootCamp/Drivers/...``
 
 
 
-Setelah semuanya selesai, Anda sekarang memiliki peralihan BootCamp! Seharusnya ada ikon BootCamp kecil di baki Anda sekarang sehingga Anda dapat memilih drive mana yang akan di-boot.
+Setelah semuanya selesai, Anda sekarang memiliki peralihan BootCamp! Seharusnya ada ikon BootCamp kecil di menu taskbar Anda sekarang sehingga Anda dapat memilih drive mana yang akan di-boot.
 
+- Pastikan update driver terlebih dahulu agar bisa memilih drive yang akan di boot
+  - **Ketik di windows search apple software update** 
 
 __Fix Dual Boot__ :
 
