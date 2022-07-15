@@ -227,3 +227,7 @@ Telah digunakan `SSDT-DDGPU` untuk menonaktifkannya untuk menghemat daya
 
 boot langsung colok HDMI, layar laptop mati, monitor nyala.
 tapi kalo boot tanpa HDMI, terus pas udah masuk desktop baru colok HDMI aman jadi dual screen
+
+### Airplay
+
+Tidak berfungsi airplay di Mac OS Bigsur
