@@ -168,33 +168,39 @@ tetapi pertimbangkan ini panduan mungkin berbeda untuk perangkat keras Anda.
 
 Bagian di bawah ini diadaptasi dari @asepms92 [Hackintosh-ASUS-A455LF-Notebook](https://github.com/asepms92/Hackintosh-ASUS-A455LF-Notebook/blob/master/README.md)
 
+*  *Security* → Secure Boot → Disabled
+*  *Intel* Virtualization → Enabled OK / Disabled jika Anda memiliki masalah
+*  *VT-d* → Enabled
+*  *Graphics Configuration* → DVMT Pre-Allocation → 64M / default 32M tetapi perlu tambalan 
+*  *USB Configuration* → XHCI Pre-Boot Mode → Enabled / Smart Auto jika menggunakan perangkat EHCI
+*  *SATA Mode* → AHCI
+*  *Boot* → Launch CSM → Enabled or Disabled untuk Resolusi Boot OC
+
 **Cara Memasuki Bios:**\
 Tekan **F2** 
-
-Bios Config | Setting 
-:---:| :---:
-Security -> Secure Boot | Disabled
-Intel Virtualization    | Enabled OK / Disabled jika Anda memiliki masalah
-VT-d | Disabled / Enabled ~~dengan boot-args "dart=0"~~
-Graphics Configuration -> DVMT Pre-Allocation | 64M / default 32M tetapi perlu tambalan 
-USB Configuration -> XHCI Pre-Boot Mode | Enabled / Smart Auto jika menggunakan perangkat EHCI
-SATA Mode | AHCI
-Boot -> Launch CSM | Enabled or Disabled untuk Resolusi Boot OC
-
 
 ## :man_facepalming: **Masalah Yang Didapat**
 
 ### Membuat touchpad dan keyboard benar benar berfungsi :
 
-Saya telah memperhatikan masalah ini akhir-akhir ini di mana touchpad dan keyboard berhenti bekerja (not respond), Lalu saat layar laptop tidur akan kembali touchpad tombol akan bekerja kembali. Masih mencoba mencari solusi di luar sana.
+Saya telah memperhatikan masalah ini akhir-akhir ini di mana touchpad dan keyboard berhenti bekerja (not respond), Lalu saat layar laptop tidur akan kembali touchpad dan keyboard akan bekerja kembali. Masih mencoba mencari solusi di luar sana.
+
+**Solusi terbaik menggunakan kext ApplePs2SmartTouchpad.kext** 
  
 ### Membuat kecepatan wifi benar benar berfungsi seperti aslinya :
 
 Setelah Wifi bekerja di mesin saya, masalah terbesar bagi saya adalah membuat kecepatan wifi benar-benar berfungsi seperti aslinya.</summary>
 
 <details>
-<summary>Contoh</summary>
-<img src="https://user-images.githubusercontent.com/89202419/169350954-1e9dd13f-6408-4b7a-88e7-631ad1cce277.png">
+<summary>Lebih Lanjut</summary>
+<img align="right" src="https://user-images.githubusercontent.com/89202419/179365367-dab51a58-9fed-40ac-a65a-4f5e73d84223.png">
+
+Sinyal bar di mojave kuat 
+
+<img align="right" src="https://user-images.githubusercontent.com/89202419/169350954-1e9dd13f-6408-4b7a-88e7-631ad1cce277.png">
+
+
+Sinyal bar di bigsur lemah 
 
 Solusi Terbaik adalah dengan membeli dongle Wi-Fi USB atau kartu nirkabel yang didukung
 </details>
@@ -204,15 +210,18 @@ Saya telah berjuang untuk waktu yang lama agar Bluetooth berfungsi di laptop ini
 
 
 <details>
-<summary>Contoh </summary>
-<img src="https://user-images.githubusercontent.com/89202419/169351491-c236bd1b-2c77-4249-8897-bc018b2351ec.png">
+<summary>Lebih Lanjut</summary>
+<img align="right" src="https://user-images.githubusercontent.com/89202419/169351491-c236bd1b-2c77-4249-8897-bc018b2351ec.png">
 
-Peringatan: Ath3kBTInjector :
+**Peringatan Ath3kBTInjector :**
 
-
-:warning: kext memiliki cacat kecil: jika Anda ingin mengaktifkan / menonaktifkan Bluetooth , Anda harus mematikan Wi-Fi terlebih dahulu.  
-Ath3kBTInjector dapat dihindari bagi mereka yang tidak keberatan tombol On/off bluetooth berwarna abu - abu di Bluetooth PrefPane.
- 
+```
+kext ini memiliki cacat kecil: jika Anda ingin mengaktifkan / menonaktifkan Bluetooth, 
+Anda harus mematikan Wi-Fi terlebih dahulu.  
+Ath3kBTInjector dapat dihindari,
+bagi mereka yang tidak keberatan tombol On/off bluetooth berwarna abu - abu,
+di Bluetooth PrefPane.
+``` 
 </details>
 
 ### HDMI mungkin tidak berfungsi saat pertama kali Anda mencolokkannya
