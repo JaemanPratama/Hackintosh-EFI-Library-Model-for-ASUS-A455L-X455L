@@ -20,7 +20,8 @@ Terimakasih Kepada :
 - [EmlyDinesh](https://github.com/EMlyDinEsHMG)
 - [OSXLatitude](https://osxlatitude.com)
 
-**Mendukung macOS : 10.14 - 12.3**
+**Mendukung macOS : 10.14 - 12.3** \
+**Beta**
 
 <img align="left" src="https://user-images.githubusercontent.com/89202419/166133645-eeff932b-2be4-4542-a322-989122b623b4.png#gh-dark-mode-only" width="23%">
 
@@ -147,10 +148,12 @@ tetapi pertimbangkan ini panduan mungkin berbeda untuk perangkat keras Anda.
 
 - [x] Sierra (Tested, Opencore, Olarila, Installer) 
 - `Tidak Direkomendasikan`
-  - Wifi harus dipasang di S/L/E (system/library/extension), sleep terkadang gagal
+  - Wifi harus dipasang di S/L/E (system/library/extension) 
+  - Tidak bisa sleep atau sleep terkadang gagal
 - [x] High Sierra (Tested, Opencore, Olarila Installer) 
 - `Tidak Direkomendasikan`
-  - Wifi harus dipasang di S/L/E (system/library/extension), sleep terkadang gagal
+  - Wifi harus dipasang di S/L/E (system/library/extension)
+  - Tidak bisa sleep atau sleep terkadang gagal
 - [x] Mojave (Tested, Opencore, Online Installer)
 - `Direkomendasikan`
 - [x] Catalina (Tested, Opencore, Online Installer)
@@ -161,7 +164,19 @@ tetapi pertimbangkan ini panduan mungkin berbeda untuk perangkat keras Anda.
 - [x] Monterey (Tested, Opencore, Olarila Installer) 
 - `Tidak Direkomendasikan`
   - Bagi Pengguna wifi atheros, wifi/bluetooth tidak berjalan ( EOL )
+  - Solusinya dengan mengganti kartu nirkabel yang didukung 
 
+<details>
+<summary>Lebih Lanjut</summary>
+
+```
+Saya sangat menyarankan anda menginstall Mac OS antara Mojave, Catalina Dan Bigsur terlebih dahulu 
+Karena Apa? EFI ini hanya stabil diantara Mac OS tersebut
+```
+
+**EFI Ini Masih Tahap Pengembangan Di Monterey Dan Ventura**
+
+</details>
 
 
 ## 🔍 Konfigurasi Bios :
