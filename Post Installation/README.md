@@ -67,12 +67,19 @@ https://github.com/usr-sse2/RDM/releases/tag/2.5.0
 
 
 
-### Mengaktifkan audio and iGPU
-Tanpa patch audio dan video, sistem tidak memiliki suara dan ukuran gpu mem hanya 4MB.
+### Mengaktifkan audio dan iGPU
+**Tanpa patch audio dan video, sistem tidak memiliki suara dan ukuran gpu mem hanya 4MB.**
 
 <img src="https://www.tonymacx86.com/data/attachments/237/237778-90fad6d11acef68ae0c9fefa7495c46f.jpg">
 
 Download [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) Dan [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases) ke EFI/OC/Kext SSD, WhateverGreen memperbaiki banyak masalah dengan grafis iGPU, AMD, dan Nvidia, AppleALC.kext membantu kami membuat audio berfungsi. Ikuti [panduan](https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/) untuk menghasilkan patch Opencore. Id tata letak audio dari Conexant cx20751/2 seharusnya `21` (`28` Juga Berfungsi)
+
+
+### Otomatis Sleep atau Hibernasi saat baterai habis
+
+![](https://user-images.githubusercontent.com/89202419/179543006-ebe8b004-b4bc-4f3a-9dde-9a6890561df3.jpg)
+
+**Unduh dan jalankan script [ini](https://www.insanelymac.com/forum/topic/336414-release-sleeponlowbattery-%E2%80%9Csolb%E2%80%9D/)**
 
 ### [Untuk Lebih Lengkapnya ](https://dortania.github.io/OpenCore-Post-Install/)
 
