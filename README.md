@@ -50,6 +50,7 @@ tetapi pertimbangkan ini panduan mungkin berbeda untuk perangkat keras Anda.
 </p>
 
 ## Model Perangkat Yang Didukung EFI Ini:
+#### Pembaruan semua EFI akan di mulai pada bulan januari 2023 
 
 ### [Asus X455LA](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/X455LA)
 
