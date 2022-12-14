@@ -7,10 +7,8 @@
 [![](https://img.shields.io/badge/Facebook-HackintoshIndonesia-informational?style=flat&logo=facebook&logoColor=white&color=3a4dc9)](https://www.facebook.com/groups/hackintosh.indonesia)
 [![](https://img.shields.io/badge/Github-Issues-informational?style=flat&logo=Github&logoColor=white&color=8a178a)](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/issues)
 
-<img align="right" src="https://help.apple.com/assets/61E8950FFC2FB340377F9335/61E89511FC2FB340377F933E/en_US/ba4de10ea93536361680a5dea7896f66.png#gh-light-mode-only" alt="Critter" height="180" width="175"></a>
+<img align="right" src="https://help.apple.com/assets/61E8950FFC2FB340377F9335/61E89511FC2FB340377F933E/en_US/ba4de10ea93536361680a5dea7896f66.png" alt="Critter" height="180" width="175"></a>
 
-<img align="right" src="https://help.apple.com/assets/61E8950FFC2FB340377F9335/61E89511FC2FB340377F933E/en_US/ba4de10ea93536361680a5dea7896f66.png
-#gh-dark-mode-only" alt="Critter" height="180" width="175"></a>
 
 
 
