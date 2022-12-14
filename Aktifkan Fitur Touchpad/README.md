@@ -1,6 +1,6 @@
-### Cara Mengaktifkan / Mengonfigurasi Gerakan Multi-Touch di **ELAN v4, FOCALTECH dan SYNAPTICS**
+### Mengaktifkan Gerakan Multi-Touch di **ELAN v4, FOCALTECH dan SYNAPTICS**
 
-<img align="left" src="https://ubuntuhandbook.org/wp-content/uploads/2021/06/touchegg-icon-1-250x250.png" >
+<img align="left" src="https://cdn-icons-png.flaticon.com/512/1414/1414080.png" height="180" width="175">
 
 
 Tutorial sederhana ini menunjukkan cara mengaktifkan & mengkonfigurasi gerakan multi-sentuh di  **ELAN v4, FOCALTECH dan SYNAPTICS** menggunakan kext Appleps2smarttouchpad.kext yang berasal dari [EMlyDinEsH](https://osxlatitude.com/forums/topic/1948-elan-focaltech-and-synaptics-smart-touchpad-driver/)
@@ -13,7 +13,7 @@ Sayangnya gerakan ini hanya mengemulasi beberapa gerakan dengan mengirimkan sist
 
 ### Catatan :
 
-- Diuji pada MacOS Big Sur 
+- Diuji di MacOS Mojave, Catalina dan Big Sur 
 - Hanya Bekerja Pada ELAN v4, FOCALTECH dan SYNAPTICS
 - Pembaruan terakhir Versi Kext 10 - 12 - 2016
 
@@ -23,7 +23,7 @@ Sayangnya gerakan ini hanya mengemulasi beberapa gerakan dengan mengirimkan sist
   * Bagi yang menggunakan bootloader Clover `EFI > Clover > Kexts > Other` 
   * Bagi yang menggunakan bootloader Opencore `EFI > OC > Kexts`
 - reboot sistem Anda
-- Tambahkan gerakan Anda sendiri atau  pilih  Impor dari menu Gerakan untuk menggunakan konfigurasi saya yang ditemukan di  file ConfigGesure di bawah ini.
+- Tambahkan gerakan Anda sendiri atau  pilih  Impor dari menu Gerakan untuk menggunakan konfigurasi saya yang sudah berada di dalam efi asus a455l.
   * Jika memilih untuk impor  dari menu Gerakan saya replace file info.plist ke `ApplePS2SmartTouchPad.kext > Contents`
 
 ### Mengonfigurasi Gerakan :
@@ -53,7 +53,8 @@ buka 4 jari | menampilkan Desktop
 Jepit 5 jari | Membuka Launchpad
 klik 3 jari | Membuka Pencarian Cerdas
 
+### Video dokumentasi gerakan touchpad
 
-https://user-images.githubusercontent.com/89202419/177010661-e0dc61bd-dd57-4b7f-9ba8-63436535a873.mp4
+https://user-images.githubusercontent.com/89202419/177010661-e0dc61bd-dd57-4b7f-9ba8-63436535a873.mp4  
 
 
