@@ -149,7 +149,7 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.7-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
-<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="30%">
+<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="27%">
 
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
 [![MacOS Mojave](https://img.shields.io/badge/macOS-10.14.2-brown.svg)](https://www.apple.com/li/macos/mojave/)
