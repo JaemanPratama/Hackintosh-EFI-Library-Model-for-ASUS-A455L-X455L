@@ -47,8 +47,6 @@ tetapi pertimbangkan ini panduan mungkin berbeda untuk perangkat keras Anda.
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.7-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
-<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="30%">
-
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
 [![MacOS Mojave](https://img.shields.io/badge/macOS-10.14.2-brown.svg)](https://www.apple.com/li/macos/mojave/)
 [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.7-green.svg)](https://www.apple.com/li/macos/catalina/)
@@ -56,6 +54,7 @@ tetapi pertimbangkan ini panduan mungkin berbeda untuk perangkat keras Anda.
 [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
 [![MacOS Ventura](https://img.shields.io/badge/macOS-13.1-orange.svg)](https://www.apple.com/li/macos/ventura/)
 
+<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="30%">
 
 
 | **Kategori**   | **Komponen**                 		
@@ -149,7 +148,6 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.7-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
-<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="27%">
 
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
 [![MacOS Mojave](https://img.shields.io/badge/macOS-10.14.2-brown.svg)](https://www.apple.com/li/macos/mojave/)
@@ -158,13 +156,15 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
 [![MacOS Ventura](https://img.shields.io/badge/macOS-13.1-orange.svg)](https://www.apple.com/li/macos/ventura/)
 
+<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="30%">
+
 | **Category**   | **Component**                 		
 |----------------|--------------------------------------|
 |**CPU**		       |2.20GHz Intel Core i5-5200U		            |										      
 |**GPU**		       |Intel HD 5500				     		 										       |
 |**DGPU**		       |Nvidia 920M			     		 										       |
 |**RAM**         |4 + 4 GB DDR3L               		   |
-|**SDD**         |Sandisk SSD Plus 120GB & HDD Hitachi 5400RPM SATA2 500GB 		                |
+|**SDD**         |Sandisk SSD Plus 120GB 		                |
 |**Layar**       |14 Inch HD LED	1366x768	 		               |										      
 |**Wi-Fi/BT**    |Atheros AR9565  			     		                |	     
 |**Bluetooth**   |Built In 			     		                         | 	  
@@ -246,14 +246,14 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.7-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
-<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="30%">
-
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
 [![MacOS Mojave](https://img.shields.io/badge/macOS-10.14.2-brown.svg)](https://www.apple.com/li/macos/mojave/)
 [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.7-green.svg)](https://www.apple.com/li/macos/catalina/)
 [![MacOS Big Sur](https://img.shields.io/badge/macOS-11.6.7-red.svg)](https://www.apple.com/macos/big-sur/)
 [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
 [![MacOS Ventura](https://img.shields.io/badge/macOS-13.1-orange.svg)](https://www.apple.com/li/macos/ventura/)
+
+<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="30%">
 
 
 | **Category**   | **Component**                 		
@@ -351,8 +351,8 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.7-green.svg)](https://www.apple.com/li/macos/catalina/)
 [![MacOS Big Sur](https://img.shields.io/badge/macOS-11.6.7-red.svg)](https://www.apple.com/macos/big-sur/)
 [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
-[![MacOS Ventura](https://img.shields.io/badge/macOS-13.1-orange.svg)](https://www.apple.com/li/macos/ventura/)
 
+<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="30%">
 
 | **Category**   | **Component**                 		
 |----------------|--------------------------------------|
@@ -442,15 +442,13 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.7-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
-<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="30%">
-
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
 [![MacOS Mojave](https://img.shields.io/badge/macOS-10.14.2-brown.svg)](https://www.apple.com/li/macos/mojave/)
 [![MacOS Catalina](https://img.shields.io/badge/macOS-10.15.7-green.svg)](https://www.apple.com/li/macos/catalina/)
 [![MacOS Big Sur](https://img.shields.io/badge/macOS-11.6.7-red.svg)](https://www.apple.com/macos/big-sur/)
 [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
-[![MacOS Ventura](https://img.shields.io/badge/macOS-13.1-orange.svg)](https://www.apple.com/li/macos/ventura/)
 
+<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="30%">
 
 | **Category**   | **Component**                 		
 |----------------|--------------------------------------|
