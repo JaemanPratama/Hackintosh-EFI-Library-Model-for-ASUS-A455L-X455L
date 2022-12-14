@@ -23,7 +23,7 @@ Sayangnya gerakan ini hanya mengemulasi beberapa gerakan dengan mengirimkan sist
   * Bagi yang menggunakan bootloader Clover `EFI > Clover > Kexts > Other` 
   * Bagi yang menggunakan bootloader Opencore `EFI > OC > Kexts`
 - reboot sistem Anda
-- Tambahkan gerakan Anda sendiri atau  pilih  Impor dari menu Gerakan untuk menggunakan konfigurasi saya yang sudah berada di dalam efi asus a455l.
+- Tambahkan gerakan Anda sendiri atau  pilih  Impor dari menu Gerakan untuk menggunakan konfigurasi saya yang sudah berada di dalam `Folder EFI ASUS A455L`.
   * Jika memilih untuk impor  dari menu Gerakan saya replace file info.plist ke `ApplePS2SmartTouchPad.kext > Contents`
 
 ### Mengonfigurasi Gerakan :
