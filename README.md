@@ -1,3 +1,3 @@
 ## Dalam Pembaruan
 
-(segera rilis 5 hari lagi)
+(segera rilis 7 hari lagi)
