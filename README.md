@@ -546,7 +546,7 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 Tekan **F2** 
   
 <details>
-<summary><strong>Nonaktifkan:</strong></summary>
+<summary><strong>Aktifkan:</strong></summary>
  
 *  *Intel* Virtualization → Enabled
 *  *VT-d* → Enabled
@@ -557,7 +557,7 @@ Tekan **F2**
  
  
 <details>
-  <summary><strong>Aktifkan:</strong></summary>
+  <summary><strong>Nonaktifkan:</strong></summary>
  
 *  *Security* → Secure Boot → Disabled
 *  *Boot* → Launch CSM → Disabled untuk Resolusi Boot OC
@@ -689,6 +689,8 @@ Setelah mengatur pengaturan ini di bios, simpan dan keluar.
 
 # Post Install
 Setelah Anda memverifikasi bahwa mesin Anda melakukan booting dengan benar tanpa masalah seperti yang dijelaskan di bagian "Apa Yang Berhasil", lanjutkan untuk melakukan hal berikut
+  
+Berdasarkan [Panduan Pasca-Instal OpenCore Dortania](https://dortania.github.io/OpenCore-Post-Install/).
 
 <details><summary><strong>0.Boot os tanpa usb atau drive apa pun</strong></summary>
  
@@ -708,14 +710,30 @@ Setelah mem-boot ke OS, Anda tidak dapat mem-boot tanpa usb, karena EFI ada di U
 Jangan gunakan ini jika Anda menggunakan dual boot. Di Config.plist, Anda dapat menonaktifkan layar boot picker sehingga Anda langsung boot ke logo Apple dengan mengatur di bawah `Misc` -> `Boot` -> `ShowPicker` False (NO)
 Catatan: Anda masih dapat melihat boot picker dengan ShowPicker disetel ke no/false dengan mengirim spam ke <kbd>alt</kbd> + <kbd>Esc</kbd> sebelum logo apel ditampilkan saat boot.
 </details>
+  
+  <details><summary><strong>3.Aktifkan FileVault</strong></summary>
+   
+  [FileVault](https://support.apple.com/en-us/HT204837) digunakan untuk mengenkripsi disk mulai di Hackintosh Anda. Mengaktifkannya sepenuhnya opsional, tetapi mungkin ide yang bagus untuk kesadaran keamanan. Sebelum mengaktifkan fitur ini, Anda harus memastikan bahwa OpenCore telah dikonfigurasi dengan benar untuk berinteraksi dengan drive terenkripsi. Ikuti Panduan Pasca-Instal OpenCore untuk [menyiapkan file config.plist Anda untuk digunakan dengan FileVault](https://dortania.github.io/OpenCore-Post-Install/universal/security/filevault.html).
 
-<details> <summary><strong>3.Bersihkan Memperbarui EFI Anda dengan rilis EFI baru</strong></summary>
+Perubahan (opsional) berikut telah dibuat:
+
+* `Misc > Boot > PollAppleHotKeys` → `True`
+* `Misc > Keamanan > AuthRestart` → `True`
+
+Anda sekarang dapat mengaktifkan FileVault di Keamanan & Privasi di Preferensi Sistem seperti di Mac asli. Setelah proses enkripsi selesai, kata sandi akun Anda akan diminta untuk mendekripsi disk pengaktifan setiap kali Hackintosh Anda dijalankan.
+
+Catatan: Anda juga harus melakukan perubahan ini pada konfigurasi OpenCore drive USB Anda sehingga dapat mem-boot sistem Anda dengan benar jika partisi EFI `Macintosh SSD` menjadi kacau. Jika Anda tidak memperbarui konfigurasi, bootloader OpenCore mungkin tidak dapat menangani drive terenkripsi FileVault dengan benar
+    
+  </details>
+
+<details><summary><strong>4.Bersihkan Memperbarui EFI Anda dengan rilis EFI baru</strong></summary>
 
 Untuk memperbarui EFI Anda dengan EFI Rilis baru. Langkah langkah:-
 
 1) Unduh EFI Rilis baru dari [di sini](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases)
 
-2) Ambil cadangan file SMBios atau windows dual boot ke folder lain, jika diperlukan. (jika Anda ingin mencadangkan SMBIOS, salin `nomor seri sistem`, `UUID sistem`, `MLB`, `ROM`, `Nama produk sistem`.)
+2) Ambil cadangan file SMBios atau windows 
+ fboot ke folder lain, jika diperlukan. (jika Anda ingin mencadangkan SMBIOS, salin `nomor seri sistem`, `UUID sistem`, `MLB`, `ROM`, `Nama produk sistem`.)
 
 3) Sekarang tambahkan SMBIOS tersebut atau tempatkan file Windows EFI sebagaimana mestinya di EFI lama ke EFI baru, jika Anda telah membuat cadangan sebelumnya.
 
@@ -729,7 +747,7 @@ Untuk memperbarui EFI Anda dengan EFI Rilis baru. Langkah langkah:-
 
 </details>
 
-<details><summary><strong>4. Tambahkan Properti Perangkat untuk Serial number, MLB, ROM, System-UUID.</strong></summary>
+<details><summary><strong>5. Tambahkan Properti Perangkat untuk Serial number, MLB, ROM, System-UUID.</strong></summary>
  
 Gunakan SMBios `MacBookAir9,1`. Direkomendasikan : opencore configurator, Buka `PlatformInfo >SMBios`Centang "Add to the section to config file" di `SMBIOS` dan `DATAHUB -GENERIC- PLATFORMNVRAM` dan lanjutkan Menambahkan SMBIOS Anda.
 Ikuti [panduan Opencore](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) ini untuk mengatur nomor seri dan info yang menyertai untuk mendapatkan iServices.
@@ -737,13 +755,13 @@ Ikuti [panduan Opencore](https://dortania.github.io/OpenCore-Post-Install/univer
   Trik untuk Mendapatkan detail Prosesor yang tepat di Informasi Sistem - Saat Anda menambahkan smbios, Edit `processor type` -> `0` atau hapus di dalam `processor-type` .
   </details>
  
-<details><summary><strong>5. Perbaiki Imessage dan Facetime.</strong></summary>
+<details><summary><strong>6. Perbaiki Imessage dan Facetime.</strong></summary>
  
 Jika Anda baru mengenal akun apple atau jika Anda menggunakan akun apple untuk pertama kalinya di hackintosh, Anda perlu menggunakan akun apple selama satu bulan dan menggunakan icloud. Padahal imessage atau factime tidak jalan..
 Masalahnya adalah "Gunakan" selama sebulan atau lebih dan secara otomatis setelah beberapa hari, secara ajaib facetime dan imessages bekerja ... Tada ...
   </details>
  
-  <details><summary><strong>6. Install Windows di Pre-installed MacOS (Dual-Boot).</strong></summary>
+  <details><summary><strong>7. Install Windows di Pre-installed MacOS (Dual-Boot).</strong></summary>
  
   - Proses ini sangat sederhana untuk dual boot dan dapat menanyakan keraguan dan masalah di sini.
  
@@ -759,6 +777,32 @@ Masalahnya adalah "Gunakan" selama sebulan atau lebih dan secara otomatis setela
   10. Sekarang Anda dapat dengan mudah mendapatkan Windows & MacOS di menu boot.
  
   </details>
+  
+<details><summary><strong>8.Instal Utilitas Boot Camp.</strong></summary>
+  
+  Untuk kembali ke macOS dari Windows tanpa memerlukan input pengguna selama boot, [Perangkat Lunak Dukungan Windows](https://support.apple.com/en-us/HT204923) Apple harus diinstal. Panduan Pasca-Instal OpenCore mencakup [petunjuk penggunaan alat pihak ketiga untuk mengunduh driver ini](https://dortania.github.io/OpenCore-Post-Install/multiboot/bootcamp.html). Namun, mereka juga dapat diunduh langsung di macOS menggunakan Boot Camp Assistant.
+
+1. Luncurkan Boot Camp Assistant dan pilih item menu `Action > Download Windows Support Software`
+
+2. Salin file yang diunduh ke drive USB yang kompatibel dengan Windows dan reboot ke Windows
+
+3. Hapus semua driver Boot Camp yang tidak diperlukan:
+    * Semua folder di `$WinPEDriver$` (simpan folder induk)
+    * Semua folder di `BootCamp/Drivers/` **kecuali** `Apple/`
+    * Semua folder/file di `BootCamp/Drivers/Apple/` **kecuali** `BootCamp.msi`
+   
+    <br/>
+   
+    ![File Kamp Pelatihan yang Tersisa](https://user-images.githubusercontent.com/867617/111693344-e3534a80-8806-11eb-8442-510c9500b299.png)
+
+4. Jalankan `BootCamp/Setup.exe` untuk menginstal perangkat lunak Boot Camp.
+
+5. Sekarang Anda dapat menggunakan Panel Kontrol Boot Camp di bilah tugas untuk memulai ulang langsung ke macOS tanpa memerlukan input pengguna lebih lanjut, seperti pada Mac asli yang menjalankan Boot Camp.
+
+![Panel Kontrol dan Asisten Boot Camp](https://user-images.githubusercontent.com/867617/111683749-44c1ec00-87fc-11eb-8932-c747264443bc.png)
+  
+  </details>
+
 
 <details><summary><strong>7.Pemetaan port USB.</strong></summary>
 
