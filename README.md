@@ -54,7 +54,7 @@ tetapi pertimbangkan ini panduan mungkin berbeda untuk perangkat keras Anda.
 [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
 [![MacOS Ventura](https://img.shields.io/badge/macOS-13.1-orange.svg)](https://www.apple.com/li/macos/ventura/)
 
-<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="30%">
+<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Untitled-3.jpg" width="30%">
 
 
 | **Kategori**   | **Komponen**                 		
@@ -156,7 +156,7 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
 [![MacOS Ventura](https://img.shields.io/badge/macOS-13.1-orange.svg)](https://www.apple.com/li/macos/ventura/)
 
-<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="30%">
+<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Untitled-1.jpg" width="30%">
 
 | **Category**   | **Component**                 		
 |----------------|--------------------------------------|
@@ -350,7 +350,7 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 [![MacOS Big Sur](https://img.shields.io/badge/macOS-11.6.7-red.svg)](https://www.apple.com/macos/big-sur/)
 [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
 
-<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="30%">
+<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Untitled-2.jpg" width="30%">
 
 | **Category**   | **Component**                 		
 |----------------|--------------------------------------|
@@ -446,7 +446,7 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 [![MacOS Big Sur](https://img.shields.io/badge/macOS-11.6.7-red.svg)](https://www.apple.com/macos/big-sur/)
 [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
 
-<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="30%">
+<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Untitled-4.jpg" width="30%">
 
 | **Category**   | **Component**                 		
 |----------------|--------------------------------------|
