@@ -804,12 +804,12 @@ Masalahnya adalah "Gunakan" selama sebulan atau lebih dan secara otomatis setela
   </details>
 
 
-<details><summary><strong>7.Pemetaan port USB.</strong></summary>
+<details><summary><strong>9.Pemetaan port USB.</strong></summary>
 
 menggunakan [Hackintool](https://github.com/headkaze/Hackintool) atau [USBMap](https://github.com/corpnewt/USBMap)
 </details>
 
-<details><summary><strong>8.Perbaikan audio.</strong></summary>
+<details><summary><strong>10.Perbaikan audio.</strong></summary>
 
 - https://hackintosher.com/guides/get-hackintosh-audio-working/
 
