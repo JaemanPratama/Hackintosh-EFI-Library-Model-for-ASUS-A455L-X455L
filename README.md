@@ -832,6 +832,61 @@ Beritahu saya, Jika ada kesalahan / kesalahan ejaan dalam Instalasi atau di mana
 - https://github.com/acidanthera/Lilu
 - https://github.com/acidanthera/AppleALC
 
+## ACPI
+
+- [Menambal DSDT/SSDT untuk kontrol lampu latar LAPTOP](https://www.tonymacx86.com/threads/guide-patching-dsdt-ssdt-for-laptop-backlight-control.152659/)
+- [Perbaiki Tombol Pintas Keyboard / Tombol Fungsional](https://www.insanelymac.com/forum/topic/330440-beginners-guide-fix-keyboard-hot-keys-functional-keys/)
+- [RehabMan/OS-X-ACPI-Debug](https://github.com/RehabMan/OS-X-ACPI-Debug)
+
+## PCI
+
+- [OpenCore tanpa akselerasi keyboard/touchpad/gpu](https://www.olarila.com/topic/6730-opencore-no-keyboardtouchpadgpu-accelleration/?tab=comments#comment-86076)
+- [Cara menambahkan properti perangkat untuk OpenCore](https://www.youtube.com/watch?v=hD0kpsQHIIc)
+
+## Tidur
+
+- [Apa perbedaan antara hibernatemode=0 dan hibernatemode=3](https://www.tonymacx86.com/threads/what-is-different-between-hibernatemode-0-and-hibernatemode-3.164030/)
+- [Cara Memilih Mode Tidur Mac](https://mackeeper.com/blog/post/366-do-you-know-what-sleep-mode-is-the-best-for-your-mac/)
+
+## Manajemen daya
+
+- [Apa yang dilakukan -xcpm?](https://www.reddit.com/r/hackintosh/comments/85e8hn/what_does_xcpm_do/)
+- [X86PlatformPlugin Customization und Anpassung – Perfektes Speedstepping](https://www.hackintosh-forum.de/forum/thread/48025-cpufriend-guide-hwp-speedstep-x86platformplugin-vs-acpi-smc-platformplugin/)
+
+## Keamanan
+
+- [OpenCore Post-Install: Apple Secure Boot](https://dortania.github.io/OpenCore-Post-Install/universal/security/applesecureboot.html#what-is-apple-secure-boot)
+- [Melindungi data di beberapa lapisan](https://developer.apple.com/news/?id=3xpv8r2m)
+- [Volume snapshot? com.apple.os.update-xxxxxx di Disk Utility](https://discussions.apple.com/thread/252032330)
+- [Perubahan APFS di Big Sur: cara Time Machine mencadangkan ke APFS, dan lainnya](https://eclecticlight.co/2020/06/29/apfs-changes-in-big-sur-how-time-machine-backs-up-to-apfs-and-more/)
+- [Volume Sistem Bertanda Tangan Big Sur: perlindungan keamanan tambahan](https://eclecticlight.co/2020/06/25/big-surs-signed-system-volume-added-security-protection/)
+- [Apakah volume sistem Big Sur disegel?](https://eclecticlight.co/2020/11/30/is-big-surs-system-volume-sealed/)
+
+## Kesalahan
+
+- [Kode Error Filevault](https://support.addigy.com/support/solutions/articles/8000056056-filevault-error-codes)
+- [Perbaiki Mac Anda yang macet saat dienkripsi dengan FileVault](https://www.macissues.com/2014/12/16/fix-your-mac-stuck-on-encrypting-with-filevault/)
+- [FileVault Stuck saat Enkripsi Dijeda](https://forums.macrumors.com/threads/filevault-stuck-on-paused-encryption.1952148/)
+- [FileVault Stuck on Pause](https://apple.stackexchange.com/questions/160161/filevault-stuck-on-pause)
+
+## Tombol FN
+
+- [Kecerahan Keyboard FN ASUS UX32VD macOS 11.1](https://github.com/hieplpvip/AsusSMC/issues/93)
+- [Perbaiki Tombol Pintas Keyboard / Tombol Fungsional](https://www.insanelymac.com/forum/topic/330440-beginners-guide-fix-keyboard-hot-keys-functional-keys/)
+- [PANDUAN: Cara Memperbaiki Hotkey Kecerahan di DSDT](https://www.insanelymac.com/forum/topic/305030-guide-how-to-fix-brightness-hotkeys-in-dsdt/)
+- [Menambal DSDT/SSDT untuk kontrol lampu latar LAPTOP](https://www.tonymacx86.com/threads/guide-patching-dsdt-ssdt-for-laptop-backlight-control.152659/)
+
+## Pembaca Kartu
+
+- [Coba RealtekCardReader(+Friend).kext](https://github.com/rafaelmaeuer/Asus-UX32VD-Hackintosh/issues/36)
+- [Masalah dengan RTS5139](https://github.com/0xFireWolf/RealtekCardReader/issues/21)
+- [Bagaimana cara membuang log yang dihasilkan oleh driver?](https://github.com/0xFireWolf/RealtekCardReader/blob/main/Docs/FAQ.md#how-do-i-dump-the-log-produced-by-the-driver)
+
+**Linux**
+
+- [Jalankan Ubuntu 20.04 dari USB Stick](https://linuxhint.com/run_ubuntu_usb_stick/)
+- [OpenCore Multiboot - Dualbooting dengan Linux](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html#dualbooting-with-linux)
+
 ## Apa yang ada di dalam folder EFI?
 ```
 ├── EFI
