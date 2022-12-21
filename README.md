@@ -826,7 +826,113 @@ menggunakan [Hackintool](https://github.com/headkaze/Hackintool) atau [USBMap](h
  
 <hr>
 
-Beritahu saya, Jika ada kesalahan / kesalahan ejaan dalam Instalasi atau di mana ...
+
+### Konfigurasi OpenCore
+
+Untuk menambahkan SSDT, Kexts, dan Driver Firmware Anda untuk membuat snapshot dari folder EFI yang terisi ([link](https://dortania.github.io/OpenCore-Install-Guide/config.plist/#adding-your-ssdts-kexts-and-firmware-drivers)) gunakan [corpnewt/ProperTree](https://github.com/corpnewt/ProperTree).
+
+**Tambahkan tambalan ACPI**
+
+Untuk menambahkan tambalan ACPI secara manual, lakukan hal berikut
+
+- Salin `{nama}.aml` ke `EFI/OC/ACPI`
+- Buka `config.plist` di OCC
+- Tambahkan entri baru di `ACPI` -> `Add`
+   - Tambahkan `{nama}.aml` sebagai Path
+   - Tambahkan `Comment` 
+   - Pilih `Enabled`
+
+**Tambahkan kexts**
+
+Untuk menambahkan kext secara manual, lakukan hal berikut
+
+- Salin `{name}.kext` ke `EFI/OC/Kexts`
+- Buka `config.plist` di OCC
+- Tambahkan entri baru di `Kernel` -> `Add`
+   - Tambahkan `x86_64` sebagai Arch
+   - Tambahkan `{name}.kext` sebagai BundlePath
+   - Tambahkan `Komentar` yang bermakna
+   - Jika kext bukan tanpa kode, tambahkan `{name}` sebagai ExecutablePath
+   - Tambahkan `Contents/Info.plist` sebagai PlistPath
+   - (Opsional: atur `MinKernel` dan `MaxKernel`)
+   - Pilih `Enabled`
+
+**Sanity Checker**
+
+Konfigurasi OpenCore dapat divalidasi dengan mengupload `config.plist` ke [OpenCore Sanity Checker](https://opencore.slowgeek.com/) untuk melakukan pemeriksaan. Ini membantu untuk menemukan masalah dalam konfigurasi dan untuk mengoptimalkan pengaturan.
+
+---
+
+### Penyelesaian masalah
+
+Kiat dan trik untuk memecahkan masalah yang sudah diketahui
+
+**Gangguan Grafis**
+
+Jika tampilan menunjukkan gangguan warna/grafis, tutup penutupnya, tunggu hingga mode tidur dan buka kembali.
+
+**Reset NVRAM**
+
+NVRAM dapat diatur ulang dari pemilih boot OpenCanopy jika entri tambahan ditampilkan di OpenCore ([Tautan](https://www.reddit.com/r/hackintosh/comments/h0jkjl/hide_partitions_from_opencore_boot_screen/))
+
+- Pasang `EFI` dan buka `config.plist` dengan OCC
+- Buka `Misc` -> `Boot` dan atur `HideAuxiliary = NO`
+- Saat reboot pilih `Reset NVRAM` dari alat
+
+**Opsi Boot Default**
+
+Entri boot default dapat diatur dengan `ctrl + enter` jika opsi diizinkan di OpenCore ([Tautan](https://www.reddit.com/r/hackintosh/comments/dze9kw/how_to_change_default_boot_option_for_opencore/))
+
+- Pasang `EFI` dan buka `config.plist` dengan OCC
+- Buka `Misc` -> `Security` dan atur `AllowSetDefault = YES`
+- Di OpenCanopy boot picker atur default dengan `ctrl + enter`
+
+**Tambah Entri Boot**
+
+Untuk menambahkan entri boot untuk OpenCore, masukkan bios (F2 di pos)
+
+- Pilih `Boot` -> `Tambah Opsi Boot Baru`
+   - Pilih `Tambah opsi boot`: OpenCore
+   - Pilih `Path untuk opsi boot`: \EFI\BOOT\BOOTx64.efi
+   - Pilih `Buat`
+- Tekan `ESC` dan pindahkan `OpenCore` ke posisi pertama
+- Simpan perubahan dan mulai ulang (F10)
+
+**Resolusi Boot**
+
+Resolusi layar saat boot sangat rendah, resolusi layar penuh (1080p) hanya tercapai pada tahap boot terakhir
+
+- Opsi default `TextRenderer` disetel ke `BuiltinGraphics` dan `Resolution` disetel ke `Max`([macos-decluttering](https://dortania.github.io/OpenCore-Post-Install/cosmetic/verbose.html#macos-decluttering)) memberikan hasil terbaik (1280x960 atau serupa)
+
+**Tema Boot**
+
+Karena resolusi boot terbaik dengan 1280x800 memiliki distorsi lebar 1,28 (1024/800), tema boot khusus digunakan dengan gambar terdistorsi terbalik untuk mengimbanginya. Ubah Gambar:
+
+- Buka file `.icns` dengan pratinjau apel
+- Seret dan Jatuhkan gambar `.tiff` ke folder
+- Ubah ukuran lebar Gambar menjadi 78.125% (1024/800)
+- Ubah ukuran area Gambar ke lebar aslinya
+- Simpan Gambar sebagai .png
+- Buat bundel gambar `.icns`
+   ``` sh
+   cd /OpenCore/Utilities/icnspack/
+   ./icnspack image.icns image.png image@2x.png
+   ```
+- Ganti bundle gambar asli
+
+---
+
+### Sumber
+
+Informasi berguna, tips dan tutorial yang digunakan untuk membuat Hackintosh ini
+
+#### Patch ACPI
+
+Dengan Clover sebagian besar tambalan ACPI diterapkan di DSDT utama (Tabel Deskripsi Sistem Diferensiasi) dengan metode tambalan `statis` (ekstrak DSDT -> dekompilasi -> terapkan tambalan -> kompilasi -> gunakan DSDT yang ditambal). Dengan OpenCore `dinamis` ACPI-patching adalah metode yang disukai (semua perubahan diterapkan dengan cepat dengan sistem-DSDT saat ini). Oleh karena itu semua tambalan harus disajikan sebagai SSDT (Tabel Deskripsi Sistem Sekunder). Baca selengkapnya di [Memulai ACPI](https://dortania.github.io/Getting-Started-With-ACPI/).
+
+Lihat bagian [Penambalan ACPI](/ACPI) untuk detail selengkapnya tentang DSDT, SSDT, dan proses pembuatannya.
+
+---
 
 ## Alat yang digunakan : Opencore Configurator, Opencore EFI Bootloader, MaciASL, Hackintool, IORegistryExplorer
 - https://mackie100projects.altervista.org/download-opencore-configurator/
