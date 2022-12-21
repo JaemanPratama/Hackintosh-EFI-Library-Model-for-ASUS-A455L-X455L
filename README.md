@@ -42,6 +42,7 @@ tetapi pertimbangkan ini panduan mungkin berbeda untuk perangkat keras Anda.
 
 
 ## Model Perangkat Yang Telah Didukung EFI Ini:
+***EFI ini dapat digunakan untuk macOS versi sebelumnya (tidak disarankan)***
 
 ### [ASUS X455LA](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/X455LA)
 
@@ -883,4 +884,10 @@ Beritahu saya, Jika ada kesalahan / kesalahan ejaan dalam Instalasi atau di mana
 │           ├── Font
 │           ├── Image
 │           └── Label
+
+```
+
+## Contact me
+[![Telegram](https://img.shields.io/badge/Chat_on-Telegram-blue.svg)](https://t.me/Abbas098op)
+
 
