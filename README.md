@@ -814,6 +814,13 @@ menggunakan [Hackintool](https://github.com/headkaze/Hackintool) atau [USBMap](h
 
 - https://hackintosher.com/guides/get-hackintosh-audio-working/
 
+| Device-Preset         | AppleALC ID | Audio Output | Output Switch | Microphone | Feature    |
+| --------------------- | ----------- | ------------ | ------------- | ---------- | ---------- |
+| Asus A455LD,  | alcid=3     | ✓            | ✓             | ✓          | Line-In          |
+| Asus A455LF   | alcid=21    | ✓            | ✓             | ✓          | Line-In          |
+| Asus X455LA, X455LJ  | alcid=28    | ✓            | ✓             | ✓          | Line-In          |
+
+
 </details>
 
  
@@ -826,11 +833,23 @@ Beritahu saya, Jika ada kesalahan / kesalahan ejaan dalam Instalasi atau di mana
 - https://github.com/acidanthera/OpenCorePkg/releases
 - https://github.com/acidanthera/MaciASL
 - https://github.com/headkaze/Hackintool
+- https://karabiner-elements.pqrs.org
+- https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html
 
 ## Kexts penting untuk diperbarui untuk setiap versi macOS
 - https://github.com/acidanthera/WhateverGreen
 - https://github.com/acidanthera/Lilu
 - https://github.com/acidanthera/AppleALC
+
+## ACPI-Patching Tools
+
+- [Piker-Alpha/ssdtPRGen](https://github.com/Piker-Alpha/ssdtPRGen.sh)
+- [corpnewt/SSDTTime](https://github.com/corpnewt/SSDTTime)
+- [acidanthera/MaciASL](https://github.com/acidanthera/MaciASL)
+
+---
+
+### Tautan Berguna
 
 ## ACPI
 
