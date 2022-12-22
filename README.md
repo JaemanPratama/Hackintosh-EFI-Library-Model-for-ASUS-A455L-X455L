@@ -823,6 +823,18 @@ menggunakan [Hackintool](https://github.com/headkaze/Hackintool) atau [USBMap](h
 
 </details>
 
+<details><summary><strong>11.Memperbaiki Sleep.</strong></summary>
+
+Komputer dapat tidur, namun secara otomatis reboot setelah mencoba untuk membangunkannya. Karena saya jarang menggunakan fungsi ini, solusi cepat dan kotornya adalah menonaktifkan mode tidur dengan perintah berikut:
+
+     sudo pmset -a disksleep 0
+     sudo pmset -a sleep 0
+     sudo pmset -a hibernatemode 0
+     sudo pmset -a disablesleep 1
+
+
+</details>
+
  
 <hr>
 
