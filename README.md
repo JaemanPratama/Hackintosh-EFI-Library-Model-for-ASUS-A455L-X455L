@@ -922,11 +922,8 @@ Karena resolusi boot terbaik dengan 1280x800 memiliki distorsi lebar 1,28 (1024/
 
 ---
 
-### Sumber
 
-Informasi berguna, tips dan tutorial yang digunakan untuk membuat Hackintosh ini
-
-#### Patch ACPI
+## Patch ACPI
 
 Dengan Clover sebagian besar tambalan ACPI diterapkan di DSDT utama (Tabel Deskripsi Sistem Diferensiasi) dengan metode tambalan `statis` (ekstrak DSDT -> dekompilasi -> terapkan tambalan -> kompilasi -> gunakan DSDT yang ditambal). Dengan OpenCore `dinamis` ACPI-patching adalah metode yang disukai (semua perubahan diterapkan dengan cepat dengan sistem-DSDT saat ini). Oleh karena itu semua tambalan harus disajikan sebagai SSDT (Tabel Deskripsi Sistem Sekunder). Baca selengkapnya di [Memulai ACPI](https://dortania.github.io/Getting-Started-With-ACPI/).
 
@@ -1007,7 +1004,7 @@ Lihat bagian [Penambalan ACPI](/ACPI) untuk detail selengkapnya tentang DSDT, SS
 - [Masalah dengan RTS5139](https://github.com/0xFireWolf/RealtekCardReader/issues/21)
 - [Bagaimana cara membuang log yang dihasilkan oleh driver?](https://github.com/0xFireWolf/RealtekCardReader/blob/main/Docs/FAQ.md#how-do-i-dump-the-log-produced-by-the-driver)
 
-**Linux**
+## Linux
 
 - [Jalankan Ubuntu 20.04 dari USB Stick](https://linuxhint.com/run_ubuntu_usb_stick/)
 - [OpenCore Multiboot - Dualbooting dengan Linux](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html#dualbooting-with-linux)
@@ -1066,6 +1063,17 @@ Lihat bagian [Penambalan ACPI](/ACPI) untuk detail selengkapnya tentang DSDT, SS
 │           └── Label
 
 ```
+
+## FAQ
+
+
+### Haruskah saya membuat hackintosh atau membeli Mac?
+
+Jika Anda harus bertanya, beli saja Mac. Anda akan menghabiskan lebih banyak uang dan memiliki kemampuan ekspansi yang jauh lebih sedikit, tetapi keamanan dan dukungan yang Anda dapatkan dengan Mac mungkin membuat harga premium sepadan.
+
+Meskipun proses hackintosh telah disederhanakan akhir-akhir ini, ini masih melibatkan sedikit mengutak-atik.
+
+Jika Anda suka mengotak-atik, maka Anda mungkin ingin mencobanya. Anda dapat membuat roket dari sebuah mesin, penuh sesak dengan penyimpanan murah dengan biaya sepersekian dari harga Mac yang setara.
 
 ## Contact me
 [![Telegram](https://img.shields.io/badge/Chat_on-Telegram-blue.svg)](https://t.me/Abbas098op)
