@@ -1091,3 +1091,4 @@ Jika Anda suka mengotak-atik, maka Anda mungkin ingin mencobanya. Anda dapat mem
 [![Telegram](https://img.shields.io/badge/Chat_on-Telegram-blue.svg)](https://t.me/Abbas098op)
 
 
+#### Jika panduan ini bermanfaat bagi Anda, jangan lupa beri saya bintang ⭐️❤️
