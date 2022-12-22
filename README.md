@@ -1075,6 +1075,18 @@ Meskipun proses hackintosh telah disederhanakan akhir-akhir ini, ini masih melib
 
 Jika Anda suka mengotak-atik, maka Anda mungkin ingin mencobanya. Anda dapat membuat roket dari sebuah mesin, penuh sesak dengan penyimpanan murah dengan biaya sepersekian dari harga Mac yang setara.
 
+* Q: Wifi menyala dan mendeteksi SSID, tetapi SSID terdekat memiliki sinyal rendah.
+* A: Jika berhasil, tidak apa-apa.
+
+* T: Apakah HDMI berfungsi?
+* A: Ya, diuji.
+
+* T: Bagaimana dengan tidur atau hibernasi?
+* J: Masih belum tahu.
+
+* T: Apakah manajemen daya aktif?
+* A: Pastikan `config.plist/acpi/ssdt` sudah disetel `plugintype=1`
+
 ## Contact me
 [![Telegram](https://img.shields.io/badge/Chat_on-Telegram-blue.svg)](https://t.me/Abbas098op)
 
