@@ -29,7 +29,31 @@ Versi MacOS yang didukung   :
 
 **Silakan lakukan riset jika Anda memiliki masalah sebelum mengganti EFI Anda dengan milik saya. Lihat [Dortania](https://dortania.github.io/getting-started/) sebelum melakukan apa pun. Saya tidak bertanggung jawab atas kehilangan apapun, termasuk namun tidak terbatas pada Kernel Panic, perangkat gagal untuk boot atau tidak dapat berfungsi secara normal, kerusakan penyimpanan atau kehilangan data**
 
-Versi stabil menggunakan `OpenCore 0.8.3`, dan versi beta EFI menggunakan `OpenCore 0.8.7`.
+## 🔎 Pencarian Cepat :
+* [Model Perangkat Yang Didukung](#model-perangkat-yang-telah-didukung-efi-ini)
+  * [ASUS X455LA](#asus-x455la)
+  * [ASUS X455LJ](#asus-x455lj)
+  * [ASUS A455LB](#asus-a455lb)
+  * [ASUS A455LF](#asus-a455lf)
+  * [ASUS A455LD](#asus-a455ld)
+* [Mulailah Dengan Bios](#mulailah-dengan-bios)
+* [Menginstall MacOS Bagi Pengguna Windows Atau Mac](#penginstal-macos-bigsur-dengan-pengguna-windows-dan-mac)
+* [Koleksi Acpi](https://github.com/JaemanPratama/Hackintosh-Asus-X455LAB-SERIES/tree/main/ACPI)
+  - [Hotpatch Acpi Opencore](https://github.com/jsassu20/OpenCore-HotPatching-Guide)
+  - [Paduan Dortania Patch SSDT](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-easy.html)
+* [Aktifkan Fitur Touchpad](https://github.com/JaemanPratama/Hackintosh-Asus-X455LAB-SERIES/tree/main/Aktifkan%20Fitur%20Touchpad)
+  - [Panduan Asli](https://osxlatitude.com/forums/topic/5966-details-about-the-smart-touchpad-driver-features/)
+* [Cara Dual Boot Dengan Windows 10 / 11](https://github.com/JaemanPratama/Hackintosh-Asus-X455LAB-SERIES/tree/main/Dual%20Boot%20Windows%2010)
+* [Tools Hackintosh](https://github.com/JaemanPratama/Hackintosh-Asus-X455LAB-SERIES/tree/main/Hackintosh%20Tools)
+* [Tentang Keyboard](https://github.com/JaemanPratama/Hackintosh-Asus-X455LAB-SERIES/tree/main/Keyboard)
+* [Paduan Singkat Installasi Hackintosh](https://github.com/JaemanPratama/Hackintosh-Asus-X455LAB-SERIES/tree/main/Panduan%20Instalasi)
+  - [Panduan Asli Dortania](https://dortania.github.io/OpenCore-Install-Guide/)
+* [Setelah Menginstall Hackintosh](https://github.com/JaemanPratama/Hackintosh-Asus-X455LAB-SERIES/tree/main/Post%20Installation)
+  - [Lebih Lengkapnya](https://dortania.github.io/OpenCore-Post-Install/)
+* [Score Test Benchmark](https://github.com/JaemanPratama/Hackintosh-Asus-X455LAB-SERIES/tree/main/Score%20Test%20Benchmark)
+
+
+Versi stabil menggunakan `OpenCore 0.8.7`, dan versi beta EFI menggunakan `OpenCore 0.8.9`.
 
 ```
 Laptop ini adalah laptop low end, dengan spesifikasi ini,
@@ -42,11 +66,11 @@ tetapi pertimbangkan ini panduan mungkin berbeda untuk perangkat keras Anda.
 
 
 ## Model Perangkat Yang Telah Didukung EFI Ini:
-***EFI ini dapat digunakan untuk macOS versi sebelumnya (tidak disarankan)***
+***EFI ini dapat digunakan untuk macOS versi lama (tidak disarankan)***
 
-### [ASUS X455LA](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/X455LA)
+# [ASUS X455LA](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/X455LA)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.7-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.9-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
 [![MacOS Mojave](https://img.shields.io/badge/macOS-10.14.2-brown.svg)](https://www.apple.com/li/macos/mojave/)
@@ -55,7 +79,7 @@ tetapi pertimbangkan ini panduan mungkin berbeda untuk perangkat keras Anda.
 [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
 [![MacOS Ventura](https://img.shields.io/badge/macOS-13.1-orange.svg)](https://www.apple.com/li/macos/ventura/)
 
-<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Untitled-3.png" width="30%">
+<img alt="Asus A455L" align="right" src="Image\Asus A455L Background Remove.png" width="28%%">
 
 
 | **Kategori**   | **Komponen**                 		
@@ -75,58 +99,138 @@ tetapi pertimbangkan ini panduan mungkin berbeda untuk perangkat keras Anda.
 
 ## Apa yang berhasil
 
-#### CPU
+### ♨️ <strong>CPU</strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Manajemen daya XCPM didukung secara native. HWP juga diaktifkan sepenuhnya.
 
 Cek lagi dengan menggunakan aplikasi intel power gadget
+</details>
 
-#### Baterai
+### ⚡<strong> BATERAI </strong>
+ 
+<details>
+<summary>Klik Untuk Melihat</summary>
 
-Tampilan daya berfungsi normal.
+Tampilan daya baterai berfungsi normal.
 
-#### Wifi
+</details>
 
-Model nirkabel OEM adalah `Atheros ar9565`. Sarankan untuk menggantinya dengan wifi yang didukung).
+### 📶 <strong> KARTU WIFI </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
+
+Model kartu wifi ini adalah `Atheros ar9565`. Sarankan untuk menggantinya dengan wifi yang didukung). \
+seperti `intel wireles n 1000`
 
 > Wifi atheros hanya bekerja di MacOS mojave sampai dengan Bigsur saja.
 
 > Fitur airplay di macOS bigsur dan diatasnya tidak berfungsi lagi
 
+</details>
 
-#### USB
+### ♻️ <strong> USB </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
-#### Ethernet
+</details>
+
+### ♾️ <strong> ETHERNET </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
-#### Layar
+</details>
+
+### 🖥️ <strong> LAYAR </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Model Integrated Graphics adalah `Intel HD Graphics 5500`
-VRAM telah diatur ke 3072 MB.
-
-MacOS saat ini tidak mendukung teknologi nvidia \
-Menggunakan `SSDT-DDGPU` untuk menonaktifkannya supaya menghemat daya baterai
+VRAM telah diatur ke 1536 MB.
 
 HDMI terpasang dengan `Intel HD Graphics 5500` dan berfungsi normal.
 
-#### Audio
+</details>
 
-Didorong oleh AppleALC dengan `layout-id: 28`. Semuanya bekerja normal.
+#### 🔇 <strong> SPEAKER </strong>
 
-#### Keyboard
+<details>
+<summary>Klik Untuk Melihat</summary>
+bekerja normal.
+</details>
 
-Berfungsi normal kecuali tombol <kbd>Insert</kbd> <kbd>pause break</kbd>
+### ⌨️ <strong> KEYBOARD </strong>
 
+<details>
+<summary>Klik Untuk Melihat</summary>
+
+Berfungsi normal kecuali tombol <kbd>Insert</kbd> <kbd>pause break</kbd> \
 Saat keyboard berhenti bekerja (not respond), solusinya adalah dengan `sleep wake` dan `restart` agar keyboard bekerja kembali
 
-#### SSD
+<details>
+<summary>Fitur Kunci FN Keyboard <kbd>FN</kbd></summary>
+
+
+
+ - Ctrl Kiri + Pause Break: keluarkan drive Optik
+ - Ctrl Kanan + Pause Break: Membuka Menu Sleep, Restart, Shutdown
+ - Fn + F1: Sleep
+ - Fn + F2: Mematikan Wifi Hanya Bekerja di Bigsur Setelah Menginstall AsusSmc Daemon dan AsusSMC.kext
+ - Fn + F3: Tidak Bekerja
+ - Fn + F4: Tidak Bekerja
+ - Fn + F5: Mengurangi Kecerahan
+ - Fn + F6: Menambahkan Kecerahan
+ - Fn + F7: Mematikan Layar
+ - Fn + F8: Jangan Disentuh !! karena Hanya Menghasilkan Reboot (Bug)
+ - Fn + F9: Mematikan Touchpad (hanya Bekerja Memakai AsusNBFnKeys.kext)
+ - Fn + F10: Mute
+ - Fn + F11: Volume Turun
+ - Fn + F12: Volume Naik
+ - Fn + Panah Atas: Mengaktifkan kontrol yang lebih baik untuk tingkat kecerahan/volume yang lebih kecil dalam mode tombol Fn
+ - Fn + arrow Bawah: Putar/Jeda
+ - Fn + arrow kiri: Media Sebelumnya
+ - Fn + arrow right: Media Selanjutnya
+ - konteks Kanan: Membuka Menu Kontekstual
+ - Print Screen: Pintasan tangkapan layar 
+ - Delete scr lk : Pintasan Tombol Hapus
+</details>
+ 
+
+</details>
+
+### 👁️‍🗨️ <strong> SSD </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 SSD SATA berfungsi normal dan TRIM otomatis diaktifkan dengan menggunakan `trimforce.kext`
 
-#### Bluetooth
+Atau \
+Ketik ini diterminal
+
+```sh
+
+$ sudo trimforce enable
+
+```
+
+
+</details>
+
+### 🧭 <strong> BLUETOOTH </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
@@ -135,8 +239,13 @@ Memaksakan Mematikan Bluetooth di Prefensi System itu akan membuat bluetooth men
 Solusi untuk masalah tersebut adalah dengan merestart atau sleep and wake
 ```
 
+</details>
 
-#### Trackpad 
+
+### 🖱️ <strong> TOUCHPAD </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Masih memiliki banyak masalah
 
@@ -144,10 +253,48 @@ Masih memiliki banyak masalah
 Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 ```
 
+<details>
+<summary>Aktifkan Gerakan Touchpad</summary>
 
-### [ASUS X455LJ](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/X455LJ)
+<details>
+<summary>Mengapa Harus Sesuai Dengan Instruksi Gambar ?</summary>
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.7-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+gerakan ini hanya mengemulasi beberapa gerakan dengan mengirimkan sistem dengan pintasan keyboard yang sesuai. Misalnya, setelah kext mendeteksi gesekan tiga jari ke kiri, ia akan memasukkan kontrol + kiri untuk beralih ruang kerja. Ini berfungsi dengan baik tetapi sedikit kikuk (Anda tidak dapat memindahkan ruang kerja setengah jalan untuk melihat apa yang ada di yang lain misalnya)
+</details>
+
+
+## Ikuti intruksi sesuai gambar !
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%201.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%202.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%203.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%204.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%205.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%206.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%208.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%209.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%2010.png"/>
+
+Gesture             |  Action
+:-------------------------:|:-------------------------:
+Klik | Tekan dengan satu jari sampai merasakan bunyi klik
+Klik dan tahan | Tekan dan tahan dengan satu jari
+Drag and Drop | Klik dan tahan item, lalu geser jari Anda melintasi trackpad untuk memindahkannya
+Gulir dua jari | Gulir ke atas atau ke bawah ke kiri atau ke kekanan
+Geser ke atas dengan tiga jari | Membuka Mission Control
+Geser ke bawah dengan tiga jari | Membuka APP EXPOSE
+Geser ke kiri atau kanan dengan tiga jari | berpindah antara desktop dan aplikasi layar penuh
+Klik atau ketuk dengan dua jari | klik kanan
+Gesek ke kiri dari tepi kanan dengan dua jari | menampilkan Pusat Pemberitahuan
+buka 4 jari | menampilkan Desktop
+Jepit 5 jari | Membuka Launchpad
+klik 3 jari | Membuka Pencarian Cerdas
+</details>
+
+</details>
+
+# [ASUS X455LJ](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/X455LJ)
+
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.9-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
 
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
@@ -157,7 +304,7 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
 [![MacOS Ventura](https://img.shields.io/badge/macOS-13.1-orange.svg)](https://www.apple.com/li/macos/ventura/)
 
-<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Untitled-1.png" width="30%">
+<img alt="Asus A455L" align="right" src="Image\Asus A455L Background Remove.png" width="28%%">
 
 | **Category**   | **Component**                 		
 |----------------|--------------------------------------|
@@ -175,57 +322,141 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 
 ## Apa yang berhasil
 
-#### CPU
+### ♨️ <strong>CPU</strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Manajemen daya XCPM didukung secara native. HWP juga diaktifkan sepenuhnya.
 
 Cek lagi dengan menggunakan aplikasi intel power gadget
+</details>
 
-#### Baterai
+### ⚡<strong> BATERAI </strong>
+ 
+<details>
+<summary>Klik Untuk Melihat</summary>
 
-Tampilan daya berfungsi normal.
+Tampilan daya baterai berfungsi normal.
 
-#### Wifi
+</details>
 
-Model nirkabel OEM adalah `Atheros ar9565`. Sarankan untuk menggantinya dengan wifi yang didukung).
+### 📶 <strong> KARTU WIFI </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
+
+Model kartu wifi ini adalah `Atheros ar9565`. Sarankan untuk menggantinya dengan wifi yang didukung). \
+seperti `intel wireles n 1000`
 
 > Wifi atheros hanya bekerja di MacOS mojave sampai dengan Bigsur saja.
 
 > Fitur airplay di macOS bigsur dan diatasnya tidak berfungsi lagi
 
-#### USB
+</details>
+
+### ♻️ <strong> USB </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
-#### Ethernet
+</details>
+
+### ♾️ <strong> ETHERNET </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
-#### Layar
+</details>
+
+### 🖥️ <strong> LAYAR </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Model Integrated Graphics adalah `Intel HD Graphics 5500`
-VRAM telah diatur ke 3072 MB.
+VRAM telah diatur ke 1536 MB.
 
 MacOS saat ini tidak mendukung teknologi nvidia \
 Menggunakan `SSDT-DDGPU` untuk menonaktifkannya supaya menghemat daya baterai
 
 HDMI terpasang dengan `Intel HD Graphics 5500` dan berfungsi normal.
 
-#### Audio
+</details>
 
-Didorong oleh AppleALC dengan `layout-id: 28`. Semuanya bekerja normal.
+#### 🔇 <strong> SPEAKER </strong>
 
-#### Keyboard
+<details>
+<summary>Klik Untuk Melihat</summary>
+bekerja normal.
+</details>
 
-Berfungsi normal kecuali tombol <kbd>Insert</kbd> <kbd>pause break</kbd>
+### ⌨️ <strong> KEYBOARD </strong>
 
+<details>
+<summary>Klik Untuk Melihat</summary>
+
+Berfungsi normal kecuali tombol <kbd>Insert</kbd> <kbd>pause break</kbd> \
 Saat keyboard berhenti bekerja (not respond), solusinya adalah dengan `sleep wake` dan `restart` agar keyboard bekerja kembali
 
-#### SSD
+<details>
+<summary>Fitur Kunci FN Keyboard <kbd>FN</kbd></summary>
+
+
+
+ - Ctrl Kiri + Pause Break: keluarkan drive Optik
+ - Ctrl Kanan + Pause Break: Membuka Menu Sleep, Restart, Shutdown
+ - Fn + F1: Sleep
+ - Fn + F2: Mematikan Wifi Hanya Bekerja di Bigsur Setelah Menginstall AsusSmc Daemon dan AsusSMC.kext
+ - Fn + F3: Tidak Bekerja
+ - Fn + F4: Tidak Bekerja
+ - Fn + F5: Mengurangi Kecerahan
+ - Fn + F6: Menambahkan Kecerahan
+ - Fn + F7: Mematikan Layar
+ - Fn + F8: Jangan Disentuh !! karena Hanya Menghasilkan Reboot (Bug)
+ - Fn + F9: Mematikan Touchpad (hanya Bekerja Memakai AsusNBFnKeys.kext)
+ - Fn + F10: Mute
+ - Fn + F11: Volume Turun
+ - Fn + F12: Volume Naik
+ - Fn + Panah Atas: Mengaktifkan kontrol yang lebih baik untuk tingkat kecerahan/volume yang lebih kecil dalam mode tombol Fn
+ - Fn + arrow Bawah: Putar/Jeda
+ - Fn + arrow kiri: Media Sebelumnya
+ - Fn + arrow right: Media Selanjutnya
+ - konteks Kanan: Membuka Menu Kontekstual
+ - Print Screen: Pintasan tangkapan layar 
+ - Delete scr lk : Pintasan Tombol Hapus
+</details>
+ 
+
+</details>
+
+### 👁️‍🗨️ <strong> SSD </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 SSD SATA berfungsi normal dan TRIM otomatis diaktifkan dengan menggunakan `trimforce.kext`
 
-#### Bluetooth
+Atau \
+Ketik ini diterminal
+
+```sh
+
+$ sudo trimforce enable
+
+```
+
+
+</details>
+
+### 🧭 <strong> BLUETOOTH </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
@@ -234,8 +465,13 @@ Memaksakan Mematikan Bluetooth di Prefensi System itu akan membuat bluetooth men
 Solusi untuk masalah tersebut adalah dengan merestart atau sleep and wake
 ```
 
+</details>
 
-#### Trackpad 
+
+### 🖱️ <strong> TOUCHPAD </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Masih memiliki banyak masalah
 
@@ -243,9 +479,50 @@ Masih memiliki banyak masalah
 Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 ```
 
-### [ASUS A455LB](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/A455LB) 
+<details>
+<summary>Aktifkan Gerakan Touchpad</summary>
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.7-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+<details>
+<summary>Mengapa Harus Sesuai Dengan Instruksi Gambar ?</summary>
+
+gerakan ini hanya mengemulasi beberapa gerakan dengan mengirimkan sistem dengan pintasan keyboard yang sesuai. Misalnya, setelah kext mendeteksi gesekan tiga jari ke kiri, ia akan memasukkan kontrol + kiri untuk beralih ruang kerja. Ini berfungsi dengan baik tetapi sedikit kikuk (Anda tidak dapat memindahkan ruang kerja setengah jalan untuk melihat apa yang ada di yang lain misalnya)
+</details>
+
+
+## Ikuti intruksi sesuai gambar !
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%201.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%202.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%203.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%204.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%205.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%206.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%208.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%209.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%2010.png"/>
+
+Gesture             |  Action
+:-------------------------:|:-------------------------:
+Klik | Tekan dengan satu jari sampai merasakan bunyi klik
+Klik dan tahan | Tekan dan tahan dengan satu jari
+Drag and Drop | Klik dan tahan item, lalu geser jari Anda melintasi trackpad untuk memindahkannya
+Gulir dua jari | Gulir ke atas atau ke bawah ke kiri atau ke kekanan
+Geser ke atas dengan tiga jari | Membuka Mission Control
+Geser ke bawah dengan tiga jari | Membuka APP EXPOSE
+Geser ke kiri atau kanan dengan tiga jari | berpindah antara desktop dan aplikasi layar penuh
+Klik atau ketuk dengan dua jari | klik kanan
+Gesek ke kiri dari tepi kanan dengan dua jari | menampilkan Pusat Pemberitahuan
+buka 4 jari | menampilkan Desktop
+Jepit 5 jari | Membuka Launchpad
+klik 3 jari | Membuka Pencarian Cerdas
+</details>
+
+</details>
+
+</details>
+
+# [ASUS A455LB](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/A455LB) 
+
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.9-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
 [![MacOS Mojave](https://img.shields.io/badge/macOS-10.14.2-brown.svg)](https://www.apple.com/li/macos/mojave/)
@@ -254,7 +531,7 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
 [![MacOS Ventura](https://img.shields.io/badge/macOS-13.1-orange.svg)](https://www.apple.com/li/macos/ventura/)
 
-<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Asus%20A455L%20Background%20Remove.png?raw=true" width="30%">
+<img alt="Asus A455L" align="right" src="Image\Asus A455L Background Remove.png" width="28%%">
 
 
 | **Category**   | **Component**                 		
@@ -273,57 +550,141 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 
 ## Apa yang berhasil
 
-#### CPU
+### ♨️ <strong>CPU</strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Manajemen daya XCPM didukung secara native. HWP juga diaktifkan sepenuhnya.
 
 Cek lagi dengan menggunakan aplikasi intel power gadget
+</details>
 
-#### Baterai
+### ⚡<strong> BATERAI </strong>
+ 
+<details>
+<summary>Klik Untuk Melihat</summary>
 
-Tampilan daya berfungsi normal.
+Tampilan daya baterai berfungsi normal.
 
-#### Wifi
+</details>
 
-Model nirkabel OEM adalah `Atheros ar9565`. Sarankan untuk menggantinya dengan wifi yang didukung).
+### 📶 <strong> KARTU WIFI </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
+
+Model kartu wifi ini adalah `Atheros ar9565`. Sarankan untuk menggantinya dengan wifi yang didukung). \
+seperti `intel wireles n 1000`
 
 > Wifi atheros hanya bekerja di MacOS mojave sampai dengan Bigsur saja.
 
 > Fitur airplay di macOS bigsur dan diatasnya tidak berfungsi lagi
 
-#### USB
+</details>
+
+### ♻️ <strong> USB </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
-#### Ethernet
+</details>
+
+### ♾️ <strong> ETHERNET </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
-#### Layar
+</details>
+
+### 🖥️ <strong> LAYAR </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Model Integrated Graphics adalah `Intel HD Graphics 5500`
-VRAM telah diatur ke 3072 MB.
+VRAM telah diatur ke 1536 MB.
 
 MacOS saat ini tidak mendukung teknologi nvidia \
 Menggunakan `SSDT-DDGPU` untuk menonaktifkannya supaya menghemat daya baterai
 
 HDMI terpasang dengan `Intel HD Graphics 5500` dan berfungsi normal.
 
-#### Audio
+</details>
 
-Didorong oleh AppleALC dengan `layout-id: 28`. Semuanya bekerja normal.
+#### 🔇 <strong> SPEAKER </strong>
 
-#### Keyboard
+<details>
+<summary>Klik Untuk Melihat</summary>
+bekerja normal.
+</details>
 
-Berfungsi normal kecuali tombol <kbd>Insert</kbd> <kbd>pause break</kbd>
+### ⌨️ <strong> KEYBOARD </strong>
 
+<details>
+<summary>Klik Untuk Melihat</summary>
+
+Berfungsi normal kecuali tombol <kbd>Insert</kbd> <kbd>pause break</kbd> \
 Saat keyboard berhenti bekerja (not respond), solusinya adalah dengan `sleep wake` dan `restart` agar keyboard bekerja kembali
 
-#### SSD
+<details>
+<summary>Fitur Kunci FN Keyboard <kbd>FN</kbd></summary>
+
+
+
+ - Ctrl Kiri + Pause Break: keluarkan drive Optik
+ - Ctrl Kanan + Pause Break: Membuka Menu Sleep, Restart, Shutdown
+ - Fn + F1: Sleep
+ - Fn + F2: Mematikan Wifi Hanya Bekerja di Bigsur Setelah Menginstall AsusSmc Daemon dan AsusSMC.kext
+ - Fn + F3: Tidak Bekerja
+ - Fn + F4: Tidak Bekerja
+ - Fn + F5: Mengurangi Kecerahan
+ - Fn + F6: Menambahkan Kecerahan
+ - Fn + F7: Mematikan Layar
+ - Fn + F8: Jangan Disentuh !! karena Hanya Menghasilkan Reboot (Bug)
+ - Fn + F9: Mematikan Touchpad (hanya Bekerja Memakai AsusNBFnKeys.kext)
+ - Fn + F10: Mute
+ - Fn + F11: Volume Turun
+ - Fn + F12: Volume Naik
+ - Fn + Panah Atas: Mengaktifkan kontrol yang lebih baik untuk tingkat kecerahan/volume yang lebih kecil dalam mode tombol Fn
+ - Fn + arrow Bawah: Putar/Jeda
+ - Fn + arrow kiri: Media Sebelumnya
+ - Fn + arrow right: Media Selanjutnya
+ - konteks Kanan: Membuka Menu Kontekstual
+ - Print Screen: Pintasan tangkapan layar 
+ - Delete scr lk : Pintasan Tombol Hapus
+</details>
+ 
+
+</details>
+
+### 👁️‍🗨️ <strong> SSD </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 SSD SATA berfungsi normal dan TRIM otomatis diaktifkan dengan menggunakan `trimforce.kext`
 
-#### Bluetooth
+Atau \
+Ketik ini diterminal
+
+```sh
+
+$ sudo trimforce enable
+
+```
+
+
+</details>
+
+### 🧭 <strong> BLUETOOTH </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
@@ -332,8 +693,13 @@ Memaksakan Mematikan Bluetooth di Prefensi System itu akan membuat bluetooth men
 Solusi untuk masalah tersebut adalah dengan merestart atau sleep and wake
 ```
 
+</details>
 
-#### Trackpad 
+
+### 🖱️ <strong> TOUCHPAD </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Masih memiliki banyak masalah
 
@@ -341,9 +707,48 @@ Masih memiliki banyak masalah
 Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 ```
 
-### [ASUS A455LF](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/A455LF) 
+<details>
+<summary>Aktifkan Gerakan Touchpad</summary>
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.7-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+<details>
+<summary>Mengapa Harus Sesuai Dengan Instruksi Gambar ?</summary>
+
+gerakan ini hanya mengemulasi beberapa gerakan dengan mengirimkan sistem dengan pintasan keyboard yang sesuai. Misalnya, setelah kext mendeteksi gesekan tiga jari ke kiri, ia akan memasukkan kontrol + kiri untuk beralih ruang kerja. Ini berfungsi dengan baik tetapi sedikit kikuk (Anda tidak dapat memindahkan ruang kerja setengah jalan untuk melihat apa yang ada di yang lain misalnya)
+</details>
+
+
+## Ikuti intruksi sesuai gambar !
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%201.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%202.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%203.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%204.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%205.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%206.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%208.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%209.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%2010.png"/>
+
+Gesture             |  Action
+:-------------------------:|:-------------------------:
+Klik | Tekan dengan satu jari sampai merasakan bunyi klik
+Klik dan tahan | Tekan dan tahan dengan satu jari
+Drag and Drop | Klik dan tahan item, lalu geser jari Anda melintasi trackpad untuk memindahkannya
+Gulir dua jari | Gulir ke atas atau ke bawah ke kiri atau ke kekanan
+Geser ke atas dengan tiga jari | Membuka Mission Control
+Geser ke bawah dengan tiga jari | Membuka APP EXPOSE
+Geser ke kiri atau kanan dengan tiga jari | berpindah antara desktop dan aplikasi layar penuh
+Klik atau ketuk dengan dua jari | klik kanan
+Gesek ke kiri dari tepi kanan dengan dua jari | menampilkan Pusat Pemberitahuan
+buka 4 jari | menampilkan Desktop
+Jepit 5 jari | Membuka Launchpad
+klik 3 jari | Membuka Pencarian Cerdas
+</details>
+
+</details>
+
+# [ASUS A455LF](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/A455LF) 
+
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.9-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
 [![MacOS Mojave](https://img.shields.io/badge/macOS-10.14.2-brown.svg)](https://www.apple.com/li/macos/mojave/)
@@ -351,7 +756,7 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 [![MacOS Big Sur](https://img.shields.io/badge/macOS-11.6.7-red.svg)](https://www.apple.com/macos/big-sur/)
 [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
 
-<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Untitled-2.png" width="30%">
+<img alt="Asus A455L" align="right" src="Image\Asus A455L Background Remove.png" width="28%%">
 
 | **Category**   | **Component**                 		
 |----------------|--------------------------------------|
@@ -369,57 +774,141 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 
 ## Apa yang berhasil
 
-#### CPU
+### ♨️ <strong>CPU</strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Manajemen daya XCPM didukung secara native. HWP juga diaktifkan sepenuhnya.
 
 Cek lagi dengan menggunakan aplikasi intel power gadget
+</details>
 
-#### Baterai
+### ⚡<strong> BATERAI </strong>
+ 
+<details>
+<summary>Klik Untuk Melihat</summary>
 
-Tampilan daya berfungsi normal.
+Tampilan daya baterai berfungsi normal.
 
-#### Wifi
+</details>
 
-Model nirkabel OEM adalah `Atheros ar9565`. Sarankan untuk menggantinya dengan wifi yang didukung).
+### 📶 <strong> KARTU WIFI </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
+
+Model kartu wifi ini adalah `Atheros ar9565`. Sarankan untuk menggantinya dengan wifi yang didukung). \
+seperti `intel wireles n 1000`
 
 > Wifi atheros hanya bekerja di MacOS mojave sampai dengan Bigsur saja.
 
 > Fitur airplay di macOS bigsur dan diatasnya tidak berfungsi lagi
 
-#### USB
+</details>
+
+### ♻️ <strong> USB </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
-#### Ethernet
+</details>
+
+### ♾️ <strong> ETHERNET </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
-#### Layar
+</details>
+
+### 🖥️ <strong> LAYAR </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Model Integrated Graphics adalah `Intel HD Graphics 4400`
-VRAM telah diatur ke 3072 MB.
+VRAM telah diatur ke 1536 MB.
 
 MacOS saat ini tidak mendukung teknologi nvidia \
 Menggunakan `SSDT-DDGPU` untuk menonaktifkannya supaya menghemat daya baterai
 
 HDMI terpasang dengan `Intel HD Graphics 4400` dan berfungsi normal.
 
-#### Audio
+</details>
 
-Didorong oleh AppleALC dengan `layout-id: 28`. Semuanya bekerja normal.
+#### 🔇 <strong> SPEAKER </strong>
 
-#### Keyboard
+<details>
+<summary>Klik Untuk Melihat</summary>
+bekerja normal.
+</details>
 
-Berfungsi normal kecuali tombol <kbd>Insert</kbd> <kbd>pause break</kbd>
+### ⌨️ <strong> KEYBOARD </strong>
 
+<details>
+<summary>Klik Untuk Melihat</summary>
+
+Berfungsi normal kecuali tombol <kbd>Insert</kbd> <kbd>pause break</kbd> \
 Saat keyboard berhenti bekerja (not respond), solusinya adalah dengan `sleep wake` dan `restart` agar keyboard bekerja kembali
 
-#### SSD
+<details>
+<summary>Fitur Kunci FN Keyboard <kbd>FN</kbd></summary>
+
+
+
+ - Ctrl Kiri + Pause Break: keluarkan drive Optik
+ - Ctrl Kanan + Pause Break: Membuka Menu Sleep, Restart, Shutdown
+ - Fn + F1: Sleep
+ - Fn + F2: Mematikan Wifi Hanya Bekerja di Bigsur Setelah Menginstall AsusSmc Daemon dan AsusSMC.kext
+ - Fn + F3: Tidak Bekerja
+ - Fn + F4: Tidak Bekerja
+ - Fn + F5: Mengurangi Kecerahan
+ - Fn + F6: Menambahkan Kecerahan
+ - Fn + F7: Mematikan Layar
+ - Fn + F8: Jangan Disentuh !! karena Hanya Menghasilkan Reboot (Bug)
+ - Fn + F9: Mematikan Touchpad (hanya Bekerja Memakai AsusNBFnKeys.kext)
+ - Fn + F10: Mute
+ - Fn + F11: Volume Turun
+ - Fn + F12: Volume Naik
+ - Fn + Panah Atas: Mengaktifkan kontrol yang lebih baik untuk tingkat kecerahan/volume yang lebih kecil dalam mode tombol Fn
+ - Fn + arrow Bawah: Putar/Jeda
+ - Fn + arrow kiri: Media Sebelumnya
+ - Fn + arrow right: Media Selanjutnya
+ - konteks Kanan: Membuka Menu Kontekstual
+ - Print Screen: Pintasan tangkapan layar 
+ - Delete scr lk : Pintasan Tombol Hapus
+</details>
+ 
+
+</details>
+
+### 👁️‍🗨️ <strong> SSD </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 SSD SATA berfungsi normal dan TRIM otomatis diaktifkan dengan menggunakan `trimforce.kext`
 
-#### Bluetooth
+Atau \
+Ketik ini diterminal
+
+```sh
+
+$ sudo trimforce enable
+
+```
+
+
+</details>
+
+### 🧭 <strong> BLUETOOTH </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
@@ -428,8 +917,13 @@ Memaksakan Mematikan Bluetooth di Prefensi System itu akan membuat bluetooth men
 Solusi untuk masalah tersebut adalah dengan merestart atau sleep and wake
 ```
 
+</details>
 
-#### Trackpad 
+
+### 🖱️ <strong> TOUCHPAD </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Masih memiliki banyak masalah
 
@@ -437,9 +931,48 @@ Masih memiliki banyak masalah
 Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 ```
 
-### [ASUS A455LD](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/A455LD)
+<details>
+<summary>Aktifkan Gerakan Touchpad</summary>
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.7-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+<details>
+<summary>Mengapa Harus Sesuai Dengan Instruksi Gambar ?</summary>
+
+gerakan ini hanya mengemulasi beberapa gerakan dengan mengirimkan sistem dengan pintasan keyboard yang sesuai. Misalnya, setelah kext mendeteksi gesekan tiga jari ke kiri, ia akan memasukkan kontrol + kiri untuk beralih ruang kerja. Ini berfungsi dengan baik tetapi sedikit kikuk (Anda tidak dapat memindahkan ruang kerja setengah jalan untuk melihat apa yang ada di yang lain misalnya)
+</details>
+
+
+## Ikuti intruksi sesuai gambar !
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%201.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%202.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%203.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%204.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%205.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%206.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%208.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%209.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%2010.png"/>
+
+Gesture             |  Action
+:-------------------------:|:-------------------------:
+Klik | Tekan dengan satu jari sampai merasakan bunyi klik
+Klik dan tahan | Tekan dan tahan dengan satu jari
+Drag and Drop | Klik dan tahan item, lalu geser jari Anda melintasi trackpad untuk memindahkannya
+Gulir dua jari | Gulir ke atas atau ke bawah ke kiri atau ke kekanan
+Geser ke atas dengan tiga jari | Membuka Mission Control
+Geser ke bawah dengan tiga jari | Membuka APP EXPOSE
+Geser ke kiri atau kanan dengan tiga jari | berpindah antara desktop dan aplikasi layar penuh
+Klik atau ketuk dengan dua jari | klik kanan
+Gesek ke kiri dari tepi kanan dengan dua jari | menampilkan Pusat Pemberitahuan
+buka 4 jari | menampilkan Desktop
+Jepit 5 jari | Membuka Launchpad
+klik 3 jari | Membuka Pencarian Cerdas
+</details>
+
+</details>
+
+# [ASUS A455LD](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/A455LD)
+
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.9-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
 [![MacOS Mojave](https://img.shields.io/badge/macOS-10.14.2-brown.svg)](https://www.apple.com/li/macos/mojave/)
@@ -447,7 +980,7 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 [![MacOS Big Sur](https://img.shields.io/badge/macOS-11.6.7-red.svg)](https://www.apple.com/macos/big-sur/)
 [![MacOS Monterey](https://img.shields.io/badge/macOS-12.5-violet.svg)](https://www.apple.com/macos/monterey/)
 
-<img align="right" src="https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/blob/main/Image/Untitled-4.png" width="30%">
+<img alt="Asus A455L" align="right" src="Image\Asus A455L Background Remove.png" width="28%%">
 
 | **Category**   | **Component**                 		
 |----------------|--------------------------------------|
@@ -465,57 +998,141 @@ Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 
 ## Apa yang berhasil
 
-#### CPU
+### ♨️ <strong>CPU</strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Manajemen daya XCPM didukung secara native. HWP juga diaktifkan sepenuhnya.
 
 Cek lagi dengan menggunakan aplikasi intel power gadget
+</details>
 
-#### Baterai
+### ⚡<strong> BATERAI </strong>
+ 
+<details>
+<summary>Klik Untuk Melihat</summary>
 
-Tampilan daya berfungsi normal.
+Tampilan daya baterai berfungsi normal.
 
-#### Wifi
+</details>
 
-Model nirkabel OEM adalah `Atheros ar9565`. Sarankan untuk menggantinya dengan wifi yang didukung).
+### 📶 <strong> KARTU WIFI </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
+
+Model kartu wifi ini adalah `Atheros ar9565`. Sarankan untuk menggantinya dengan wifi yang didukung). \
+seperti `intel wireles n 1000`
 
 > Wifi atheros hanya bekerja di MacOS mojave sampai dengan Bigsur saja.
 
 > Fitur airplay di macOS bigsur dan diatasnya tidak berfungsi lagi
 
-#### USB
+</details>
+
+### ♻️ <strong> USB </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
-#### Ethernet
+</details>
+
+### ♾️ <strong> ETHERNET </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
-#### Layar
+</details>
+
+### 🖥️ <strong> LAYAR </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Model Integrated Graphics adalah `Intel HD Graphics 4400`
-VRAM telah diatur ke 3072 MB.
+VRAM telah diatur ke 1536 MB.
 
 MacOS saat ini tidak mendukung teknologi nvidia \
 Menggunakan `SSDT-DDGPU` untuk menonaktifkannya supaya menghemat daya baterai
 
 HDMI terpasang dengan `Intel HD Graphics 4400` dan berfungsi normal.
 
-#### Audio
+</details>
 
-Didorong oleh AppleALC dengan `layout-id: 28`. Semuanya bekerja normal.
+#### 🔇 <strong> SPEAKER </strong>
 
-#### Keyboard
+<details>
+<summary>Klik Untuk Melihat</summary>
+bekerja normal.
+</details>
 
-Berfungsi normal kecuali tombol <kbd>Insert</kbd> <kbd>pause break</kbd>
+### ⌨️ <strong> KEYBOARD </strong>
 
+<details>
+<summary>Klik Untuk Melihat</summary>
+
+Berfungsi normal kecuali tombol <kbd>Insert</kbd> <kbd>pause break</kbd> \
 Saat keyboard berhenti bekerja (not respond), solusinya adalah dengan `sleep wake` dan `restart` agar keyboard bekerja kembali
 
-#### SSD
+<details>
+<summary>Fitur Kunci FN Keyboard <kbd>FN</kbd></summary>
+
+
+
+ - Ctrl Kiri + Pause Break: keluarkan drive Optik
+ - Ctrl Kanan + Pause Break: Membuka Menu Sleep, Restart, Shutdown
+ - Fn + F1: Sleep
+ - Fn + F2: Mematikan Wifi Hanya Bekerja di Bigsur Setelah Menginstall AsusSmc Daemon dan AsusSMC.kext
+ - Fn + F3: Tidak Bekerja
+ - Fn + F4: Tidak Bekerja
+ - Fn + F5: Mengurangi Kecerahan
+ - Fn + F6: Menambahkan Kecerahan
+ - Fn + F7: Mematikan Layar
+ - Fn + F8: Jangan Disentuh !! karena Hanya Menghasilkan Reboot (Bug)
+ - Fn + F9: Mematikan Touchpad (hanya Bekerja Memakai AsusNBFnKeys.kext)
+ - Fn + F10: Mute
+ - Fn + F11: Volume Turun
+ - Fn + F12: Volume Naik
+ - Fn + Panah Atas: Mengaktifkan kontrol yang lebih baik untuk tingkat kecerahan/volume yang lebih kecil dalam mode tombol Fn
+ - Fn + arrow Bawah: Putar/Jeda
+ - Fn + arrow kiri: Media Sebelumnya
+ - Fn + arrow right: Media Selanjutnya
+ - konteks Kanan: Membuka Menu Kontekstual
+ - Print Screen: Pintasan tangkapan layar 
+ - Delete scr lk : Pintasan Tombol Hapus
+</details>
+ 
+
+</details>
+
+### 👁️‍🗨️ <strong> SSD </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 SSD SATA berfungsi normal dan TRIM otomatis diaktifkan dengan menggunakan `trimforce.kext`
 
-#### Bluetooth
+Atau \
+Ketik ini diterminal
+
+```sh
+
+$ sudo trimforce enable
+
+```
+
+
+</details>
+
+### 🧭 <strong> BLUETOOTH </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Berfungsi normal.
 
@@ -524,8 +1141,13 @@ Memaksakan Mematikan Bluetooth di Prefensi System itu akan membuat bluetooth men
 Solusi untuk masalah tersebut adalah dengan merestart atau sleep and wake
 ```
 
+</details>
 
-#### Trackpad 
+
+### 🖱️ <strong> TOUCHPAD </strong>
+
+<details>
+<summary>Klik Untuk Melihat</summary>
 
 Masih memiliki banyak masalah
 
@@ -533,7 +1155,50 @@ Masih memiliki banyak masalah
 Solusi terbaik saat ini dengan menggunakan ApplePs2SmartTouchpad.kext
 ```
 
-## INSTALASI
+<details>
+<summary>Aktifkan Gerakan Touchpad</summary>
+
+<details>
+<summary>Mengapa Harus Sesuai Dengan Instruksi Gambar ?</summary>
+
+gerakan ini hanya mengemulasi beberapa gerakan dengan mengirimkan sistem dengan pintasan keyboard yang sesuai. Misalnya, setelah kext mendeteksi gesekan tiga jari ke kiri, ia akan memasukkan kontrol + kiri untuk beralih ruang kerja. Ini berfungsi dengan baik tetapi sedikit kikuk (Anda tidak dapat memindahkan ruang kerja setengah jalan untuk melihat apa yang ada di yang lain misalnya)
+</details>
+
+
+## Ikuti intruksi sesuai gambar !
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%201.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%202.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%203.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%204.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%205.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%206.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%208.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%209.png"/>
+<img src ="https://github.com/JaemanPratama/Kext-Elan-ETD0108-PS-2-Interface-Trackpad/blob/main/IMG/IMG%2010.png"/>
+
+Gesture             |  Action
+:-------------------------:|:-------------------------:
+Klik | Tekan dengan satu jari sampai merasakan bunyi klik
+Klik dan tahan | Tekan dan tahan dengan satu jari
+Drag and Drop | Klik dan tahan item, lalu geser jari Anda melintasi trackpad untuk memindahkannya
+Gulir dua jari | Gulir ke atas atau ke bawah ke kiri atau ke kekanan
+Geser ke atas dengan tiga jari | Membuka Mission Control
+Geser ke bawah dengan tiga jari | Membuka APP EXPOSE
+Geser ke kiri atau kanan dengan tiga jari | berpindah antara desktop dan aplikasi layar penuh
+Klik atau ketuk dengan dua jari | klik kanan
+Gesek ke kiri dari tepi kanan dengan dua jari | menampilkan Pusat Pemberitahuan
+buka 4 jari | menampilkan Desktop
+Jepit 5 jari | Membuka Launchpad
+klik 3 jari | Membuka Pencarian Cerdas
+</details>
+
+</details>
+
+<p align="center">
+<img src="Image\travel-guide.png" width="25%">
+</p>
+
+<center><strong><h1>INSTALASI</h1></center></strong>
 
 
 ## Mulailah dengan bios.
@@ -646,7 +1311,6 @@ Setelah mengatur pengaturan ini di bios, simpan dan keluar.
 - 9. Sekarang di menu OpenCore pilih nama partisi USB Anda
 - instal. Nikmati!!!!
 
-</details>
 
 <details>
  
@@ -669,7 +1333,18 @@ Setelah mengatur pengaturan ini di bios, simpan dan keluar.
 
 <hr>
 
-## Layout Partisi:
+</details>
+
+
+
+
+<p align="center">
+<img src="Image\6703232.png" width="25%">
+</p>
+
+<center><strong><h1> Layout Partisi </h1></center></strong>
+<center><strong><h4> Abaikan Saja! </h4></center></strong>
+
 ```
 ╭─[~/Downloads/EFI]─[Hackpro]
 ╰─[:)] % diskutil list
@@ -688,8 +1363,13 @@ Setelah mengatur pengaturan ini di bios, simpan dan keluar.
    2:       Microsoft Basic Data                         120.0 GB   disk1s2
 ```
 
-# Post Install
-Setelah Anda memverifikasi bahwa mesin Anda melakukan booting dengan benar tanpa masalah seperti yang dijelaskan di bagian "Apa Yang Berhasil", lanjutkan untuk melakukan hal berikut
+<p align="center">
+<img src="Image\5672405.png" width="25%">
+</p>
+
+<center><strong><h1> Post Install </h1> </center></strong>
+
+### Setelah Anda memverifikasi bahwa mesin Anda melakukan booting dengan benar tanpa masalah seperti yang dijelaskan di bagian "Apa Yang Berhasil", lanjutkan untuk melakukan hal berikut
   
 Berdasarkan [Panduan Pasca-Instal OpenCore Dortania](https://dortania.github.io/OpenCore-Post-Install/).
 
@@ -838,10 +1518,14 @@ Komputer dapat tidur, namun secara otomatis reboot setelah mencoba untuk membang
  
 <hr>
 
+<p align="center">
+<img src="Image\process.png" width="25%">
+</p>
 
-### Konfigurasi OpenCore
+<center><strong><h1>  Konfigurasi OpenCore </h1></center></strong>
+ 
 
-Untuk menambahkan SSDT, Kexts, dan Driver Firmware Anda untuk membuat snapshot dari folder EFI yang terisi ([link](https://dortania.github.io/OpenCore-Install-Guide/config.plist/#adding-your-ssdts-kexts-and-firmware-drivers)) gunakan [corpnewt/ProperTree](https://github.com/corpnewt/ProperTree).
+### Untuk menambahkan SSDT, Kexts, dan Driver Firmware Anda, agar membuat snapshot dari folder EFI yang sesuai dengan panduan ([Dortania](https://dortania.github.io/OpenCore-Install-Guide/config.plist/#adding-your-ssdts-kexts-and-firmware-drivers)) dan gunakan alat [corpnewt/ProperTree](https://github.com/corpnewt/ProperTree).
 
 **Tambahkan tambalan ACPI**
 
@@ -875,9 +1559,12 @@ Konfigurasi OpenCore dapat divalidasi dengan mengupload `config.plist` ke [OpenC
 
 ---
 
-### Penyelesaian masalah
+<p align="center">
+<img src="Image\troubleshooting.png" width="25%">
+</p>
+<center><strong><h1>  Penyelesaian masalah </h1></center></strong>
 
-Kiat dan trik untuk memecahkan masalah yang sudah diketahui
+
 
 **Gangguan Grafis**
 
@@ -935,36 +1622,14 @@ Karena resolusi boot terbaik dengan 1280x800 memiliki distorsi lebar 1,28 (1024/
 ---
 
 
-## Patch ACPI
 
-Dengan Clover sebagian besar tambalan ACPI diterapkan di DSDT utama (Tabel Deskripsi Sistem Diferensiasi) dengan metode tambalan `statis` (ekstrak DSDT -> dekompilasi -> terapkan tambalan -> kompilasi -> gunakan DSDT yang ditambal). Dengan OpenCore `dinamis` ACPI-patching adalah metode yang disukai (semua perubahan diterapkan dengan cepat dengan sistem-DSDT saat ini). Oleh karena itu semua tambalan harus disajikan sebagai SSDT (Tabel Deskripsi Sistem Sekunder). Baca selengkapnya di [Memulai ACPI](https://dortania.github.io/Getting-Started-With-ACPI/).
 
-Lihat bagian [Penambalan ACPI](/ACPI) untuk detail selengkapnya tentang DSDT, SSDT, dan proses pembuatannya.
+<p align="center">
+<img src="Image\folders.png" width="25%">
+</p>
 
----
-
-## Alat yang digunakan : Opencore Configurator, Opencore EFI Bootloader, MaciASL, Hackintool, IORegistryExplorer
-- https://mackie100projects.altervista.org/download-opencore-configurator/
-- https://github.com/acidanthera/OpenCorePkg/releases
-- https://github.com/acidanthera/MaciASL
-- https://github.com/headkaze/Hackintool
-- https://karabiner-elements.pqrs.org
-- https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html
-
-## Kexts penting untuk diperbarui untuk setiap versi macOS
-- https://github.com/acidanthera/WhateverGreen
-- https://github.com/acidanthera/Lilu
-- https://github.com/acidanthera/AppleALC
-
-## ACPI-Patching Tools
-
-- [Piker-Alpha/ssdtPRGen](https://github.com/Piker-Alpha/ssdtPRGen.sh)
-- [corpnewt/SSDTTime](https://github.com/corpnewt/SSDTTime)
-- [acidanthera/MaciASL](https://github.com/acidanthera/MaciASL)
-
----
-
-### Tautan Berguna
+<center><strong><h1> Tautan Yang Berguna </h1> </strong></center> 
+ 
 
 ## ACPI
 
@@ -996,6 +1661,26 @@ Lihat bagian [Penambalan ACPI](/ACPI) untuk detail selengkapnya tentang DSDT, SS
 - [Volume Sistem Bertanda Tangan Big Sur: perlindungan keamanan tambahan](https://eclecticlight.co/2020/06/25/big-surs-signed-system-volume-added-security-protection/)
 - [Apakah volume sistem Big Sur disegel?](https://eclecticlight.co/2020/11/30/is-big-surs-system-volume-sealed/)
 
+## Alat yang digunakan : Opencore Configurator, Opencore EFI Bootloader, MaciASL, Hackintool, IORegistryExplorer
+- https://mackie100projects.altervista.org/download-opencore-configurator/
+- https://github.com/acidanthera/OpenCorePkg/releases
+- https://github.com/acidanthera/MaciASL
+- https://github.com/headkaze/Hackintool
+- https://karabiner-elements.pqrs.org
+- https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html
+
+## Kexts penting untuk diperbarui untuk setiap versi macOS
+- https://github.com/acidanthera/WhateverGreen
+- https://github.com/acidanthera/Lilu
+- https://github.com/acidanthera/AppleALC
+
+## ACPI-Patching Tools
+
+- [Piker-Alpha/ssdtPRGen](https://github.com/Piker-Alpha/ssdtPRGen.sh)
+- [corpnewt/SSDTTime](https://github.com/corpnewt/SSDTTime)
+- [acidanthera/MaciASL](https://github.com/acidanthera/MaciASL)
+
+
 ## Kesalahan
 
 - [Kode Error Filevault](https://support.addigy.com/support/solutions/articles/8000056056-filevault-error-codes)
@@ -1021,7 +1706,15 @@ Lihat bagian [Penambalan ACPI](/ACPI) untuk detail selengkapnya tentang DSDT, SS
 - [Jalankan Ubuntu 20.04 dari USB Stick](https://linuxhint.com/run_ubuntu_usb_stick/)
 - [OpenCore Multiboot - Dualbooting dengan Linux](https://dortania.github.io/OpenCore-Multiboot/oc/linux.html#dualbooting-with-linux)
 
-## Apa yang ada di dalam folder EFI?
+---
+
+<p align="center">
+<img src="Image\dll.png" width="25%">
+</p>
+
+<center><strong><h1> Apa yang ada di dalam folder EFI? </h1> </strong></center> 
+
+
 ```
 ├── EFI
 │   ├── BOOT
@@ -1076,7 +1769,12 @@ Lihat bagian [Penambalan ACPI](/ACPI) untuk detail selengkapnya tentang DSDT, SS
 
 ```
 
-## FAQ
+---
+
+<p align="center">
+<img src="Image\question.png" width="25%">
+</p>
+<center><strong><h1> FAQ </h1> </strong></center> 
 
 
 ### Haruskah saya membuat hackintosh atau membeli Mac?
@@ -1087,20 +1785,56 @@ Meskipun proses hackintosh telah disederhanakan akhir-akhir ini, ini masih melib
 
 Jika Anda suka mengotak-atik, maka Anda mungkin ingin mencobanya. Anda dapat membuat roket dari sebuah mesin, penuh sesak dengan penyimpanan murah dengan biaya sepersekian dari harga Mac yang setara.
 
+<details>
+<summary><strong>Masalah Wifi Atheros</strong></summary>
+
 * Q: Wifi menyala dan mendeteksi SSID, tetapi SSID terdekat memiliki sinyal rendah.
 * A: Jika berhasil, tidak apa-apa.
+
+</details>
+
+<details>
+<summary><strong>Masalah Bluetooth Atheros</strong></summary>
+
+kext memiliki cacat kecil: jika Anda ingin mengaktifkan / menonaktifkan Bluetooth , Anda harus mematikan Wi-Fi terlebih dahulu.  \
+Ath3kBTInjector dapat dihindari bagi mereka yang tidak keberatan tombol On/off bluetooth berwarna abu - abu di Bluetooth PrefPane.
+
+</details>
+
+
+<details>
+<summary><strong>Pengujian HDMI</strong></summary>
 
 * T: Apakah HDMI berfungsi?
 * A: Ya, diuji.
 
+</details>
+
+<details>
+<summary><strong>Masalah Tidur Atau Hibernasi</strong></summary>
+
 * T: Bagaimana dengan tidur atau hibernasi?
 * J: Masih belum tahu.
+
+</details>
+
+<details>
+<summary><strong>Manajemen daya</strong></summary>
 
 * T: Apakah manajemen daya aktif?
 * A: Pastikan `config.plist/acpi/ssdt` sudah disetel `plugintype=1`
 
-## Contact me
-[![Telegram](https://img.shields.io/badge/Chat_on-Telegram-blue.svg)](https://t.me/Abbas098op)
+</details>
 
 
-#### Jika panduan ini bermanfaat bagi Anda, jangan lupa beri saya bintang ⭐️❤️
+
+---
+
+
+| Contact me             |  Support |
+:-------------------------:|:-------------------------:
+<img width="25%" src="Image\3771338.png"> | <img width="25%" src="Image\2058768.png">
+[![Telegram](https://img.shields.io/badge/Chat_on-Telegram-blue.svg)](https://t.me/Abbas098op)| Jika panduan ini bermanfaat bagi Anda, jangan lupa beri saya bintang ⭐️❤️
+
+
+
