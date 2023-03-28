@@ -20,7 +20,7 @@ Versi MacOS yang didukung   :
 - macOS 10.15 (Catalina)
 - macOS 11 (Big Sur)
 - macOS 12 (Monterey)
-- macOS 13 (Ventura) 
+- macOS 13 (Ventura) [[TAMBALAN]](#akselerasi-gpu-di-ventura)
 
 
 
@@ -1618,6 +1618,15 @@ Karena resolusi boot terbaik dengan 1280x800 memiliki distorsi lebar 1,28 (1024/
    ./icnspack image.icns image.png image@2x.png
    ```
 - Ganti bundle gambar asli
+
+## Akselerasi GPU di Ventura
+
+Sejak Apple menjatuhkan dukungan untuk SMBIOS kami (MacBookPro12,1) di Ventura, kext grafis Broadwell juga telah dihapus. Ini berarti kita perlu menambal kexts Broadwell kembali ke Ventura, yang berarti kita perlu menonaktifkan SIP. Menonaktifkan SIP mengakibatkan hilangnya kemampuan untuk menerapkan pembaruan Delta OTA. Tambalan juga harus diterapkan kembali setelah setiap pembaruan macOS. Untuk menambahkan kembali kexts yang diperlukan ke sistem, Anda harus menggunakan alat yang disebut OpenCore Legacy Patcher, yang memiliki tim luar biasa yang menambahkan dukungan kembali untuk Mac lama.
+
+- Buka halaman Rilis OpenCore Legacy Patcher terbaru: [Tautan](https://github.com/dortania/OpenCore-Legacy-Patcher/releases)
+- Unduh 'OpenCore-Patcher-GUI.app.zip'
+- Setelah mengunduh, buka aplikasi dan pilih 'Post Install Root Patch'.
+- Tunggu sebentar dan reboot sistem setelah selesai
 
 ---
 
