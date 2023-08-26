@@ -53,7 +53,7 @@ Versi MacOS yang didukung   :
 * [Score Test Benchmark](https://github.com/JaemanPratama/Hackintosh-Asus-X455LAB-SERIES/tree/main/Score%20Test%20Benchmark)
 
 
-Versi stabil menggunakan `OpenCore 0.8.7`, dan versi beta EFI menggunakan `OpenCore 0.8.9`.
+Versi stabil menggunakan `OpenCore 0.8.7`, dan versi beta EFI menggunakan `OpenCore 0.9.4`.
 
 ```
 Laptop ini adalah laptop low end, dengan spesifikasi ini,
@@ -70,7 +70,7 @@ tetapi pertimbangkan ini panduan mungkin berbeda untuk perangkat keras Anda.
 
 # [ASUS X455LA](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/X455LA)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.9-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.9.4-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
 [![MacOS Mojave](https://img.shields.io/badge/macOS-10.14.2-brown.svg)](https://www.apple.com/li/macos/mojave/)
@@ -294,7 +294,7 @@ klik 3 jari | Membuka Pencarian Cerdas
 
 # [ASUS X455LJ](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/X455LJ)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.9-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.9.4-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
 
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
@@ -522,7 +522,7 @@ klik 3 jari | Membuka Pencarian Cerdas
 
 # [ASUS A455LB](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/A455LB) 
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.9-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.9.4-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
 [![MacOS Mojave](https://img.shields.io/badge/macOS-10.14.2-brown.svg)](https://www.apple.com/li/macos/mojave/)
@@ -748,7 +748,7 @@ klik 3 jari | Membuka Pencarian Cerdas
 
 # [ASUS A455LF](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/A455LF) 
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.9-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.9.4-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
 [![MacOS Mojave](https://img.shields.io/badge/macOS-10.14.2-brown.svg)](https://www.apple.com/li/macos/mojave/)
@@ -972,7 +972,7 @@ klik 3 jari | Membuka Pencarian Cerdas
 
 # [ASUS A455LD](https://github.com/JaemanPratama/Hackintosh-EFI-Library-Asus-A455L-X455L-Model/releases/tag/A455LD)
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-v0.8.9-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
+[![OpenCore](https://img.shields.io/badge/OpenCore-v0.9.4-blue?style=flat&logo=okta)](https://github.com/acidanthera/OpenCorePkg)
 
 [![MacOS High Sierra](https://img.shields.io/badge/macOS-10.13.2-yellow.svg)](https://www.apple.com/li/macos/high-sierra/)
 [![MacOS Mojave](https://img.shields.io/badge/macOS-10.14.2-brown.svg)](https://www.apple.com/li/macos/mojave/)
